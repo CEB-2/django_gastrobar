@@ -3,14 +3,10 @@ from django.http import HttpResponse
 from gastrobar.forms import ReservationForm
 from gastrobar.models import Reservation, Dish
 
-def home(request):
-<<<<<<< HEAD
-    return render(request, 'main.html')
-# Create your views here.
-=======
+def main(request):
 	
-	return render(request, 'main.html')
->>>>>>> 8191abaa8b346af017af397adc671765612113e2
+    return render(request, 'main.html')
+
 
 def bar(request):
 	gastrobar = gastrobar.objects.all()
@@ -19,7 +15,7 @@ def bar(request):
         
 	}
 
-	return render(request, 'bar.html', context)
+	return render(request, 'menu.html', context)
 
 def dish(request):
 	dish = Dish.objects.all()
