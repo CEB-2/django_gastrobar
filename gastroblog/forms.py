@@ -1,6 +1,4 @@
-from attr import attrs
 from django import forms
-from matplotlib import widgets
 
 # Create your forms here.
 
