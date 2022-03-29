@@ -27,8 +27,7 @@ def dish(request):
 
 def reservation(request, pk):
 	reservation = Reservation.objects.get(pk=pk)
-    
-    form = ReservationForm()
+	form = ReservationForm()
 
 	if request.method == "POST":
 		form = ReservationForm(request.POST)

@@ -4,11 +4,10 @@ from django.db import models
 
 
 class Article(models.Model):
-    content = models.CharField(max_length=254)
+    content = models.TextField()
 
 
 class Comments(models.Model):
-    id_article = models.IntegerField(max_length=254),
-    user = models.CharField(max_length=254),
-    comment = models.TextField(),
-    # foreign key a lo mejor?!
+    id_article = models.ForeignKey(Article, on_delete=models.CASCADE)
+    user = models.CharField(max_length = 20),
+    comment = models.TextField()

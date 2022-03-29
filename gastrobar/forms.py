@@ -1,10 +1,8 @@
-from attr import attrs
 from django import forms
-from matplotlib import widgets
 
 # Create your forms here.
 
-#Reservation: name, mail, phone, date, time, count_p 
+#Reservation: name, mail, phone, date, time, count_p
 
 class ReservationForm(forms.Form):
     name=forms.CharField(
@@ -45,7 +43,3 @@ class ReservationForm(forms.Form):
         "class": "form-control",
         "placeholder": "Número de personas"
     }))
-
-    
-
-
