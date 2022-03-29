@@ -20,7 +20,7 @@ from gastroblog import urls
 
 
 urlpatterns = [
-    path('admin/', admin.site.urls),
+   
     path('gastrobar/', include('gastrobar.urls')),
     path('gastroblog/', include('gastroblog.urls')),
 ]
