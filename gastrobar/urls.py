@@ -4,7 +4,7 @@ from gastrobar import views
 
 urlpatterns = [
     path('', views.main, name='main'),
-    path('bar', views.bar, name='bar'),
+    path('bar', views.bar, name='menu'),
     path('dish', views.dish, name='dish'),
     path('reservation', views.reservation, name='reservation'),
 
