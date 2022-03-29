@@ -3,10 +3,15 @@ from django.http import HttpResponse
 from gastrobar.forms import ReservationForm
 from gastrobar.models import Reservation, Dish
 
+<<<<<<< HEAD
 
 def main(request):
 	
 	return render(request, 'main.html')
+=======
+def home(request):
+    return render(request, 'main.html')
+>>>>>>> 2cceb6daf1410f524f7495d8f2160c2ead440d1d
 
 def bar(request):
 	gastrobar = gastrobar.objects.all()
