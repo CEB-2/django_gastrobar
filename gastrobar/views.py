@@ -4,8 +4,12 @@ from gastrobar.forms import ReservationForm
 from gastrobar.models import Reservation, Dish
 
 def home(request):
+<<<<<<< HEAD
 	
 	return render(request, 'main.html')
+=======
+    return render(request, 'main.html')
+>>>>>>> 054dac918c4b05e9403323daf8af7dc6fb99e11e
 
 def bar(request):
 	gastrobar = gastrobar.objects.all()
