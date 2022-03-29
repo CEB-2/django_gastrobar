@@ -17,4 +17,4 @@ class Dish(models.Model):
     type = models.CharField(max_length=25)
     description = models.TextField(),
     price = models.CharField(max_length=15),
-    photo = models.IntegerField(max_length=12)
+    photo = models.IntegerField()

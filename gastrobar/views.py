@@ -4,8 +4,13 @@ from gastrobar.forms import ReservationForm
 from gastrobar.models import Reservation, Dish
 
 def home(request):
+<<<<<<< HEAD
     return render(request, 'main.html')
 # Create your views here.
+=======
+	
+	return render(request, 'main.html')
+>>>>>>> 8191abaa8b346af017af397adc671765612113e2
 
 def bar(request):
 	gastrobar = gastrobar.objects.all()
@@ -14,15 +19,14 @@ def bar(request):
         
 	}
 
-	return render(request, 'home.html', context)
+	return render(request, 'bar.html', context)
 
 def dish(request):
 	dish = Dish.objects.all()
 
 	return render(request, 'plato.html')
 
-def reservation(request, pk):
-	reservation = Reservation.objects.get(pk=pk)
+def reservation(request):
 	form = ReservationForm()
 
 	if request.method == "POST":
