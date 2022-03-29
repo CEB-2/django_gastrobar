@@ -4,7 +4,7 @@ from gastrobar.forms import ReservationForm
 from gastrobar.models import Reservation, Dish
 
 def home(request):
-
+	
 	return render(request, 'main.html')
 
 def bar(request):
