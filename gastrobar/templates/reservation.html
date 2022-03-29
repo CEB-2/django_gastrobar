@@ -1,0 +1,48 @@
+{%extends 'main.html'%}
+{% load static %}
+
+{%block page_content %}
+<h1>Reserva</h1>
+
+<div class="row">
+    <div class="col-md-8">
+
+        <form action="/reservation" method="post">
+        {% csrf_token %}
+
+            <div class="form-group" >
+                {{form.name}}
+            </div>
+
+            <div class="form-group" >
+                {{form.mail}}
+            </div>
+
+            <div class="form-group" >
+                {{form.phone}}
+            </div>
+
+            <div class="form-group" >
+                {{form.date}}
+            </div>
+
+            <div class="form-group" >
+                {{form.time}}
+            </div>
+
+            <div class="form-group" >
+                {{form.count_p}}
+            </div>
+
+            <button type="submit" class="btn btn-primary" >Hacer reserva</button>
+
+        </form>
+    </div>
+</div>
+
+
+
+    
+
+{%endblock%}
+
