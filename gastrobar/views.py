@@ -13,7 +13,7 @@ def bar(request):
         
 	}
 
-	return render(request, 'bar.html', context)
+	return render(request, 'menu.html', context)
 
 def dish(request):
 	dish = Dish.objects.all()

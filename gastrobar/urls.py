@@ -7,5 +7,5 @@ urlpatterns = [
     path('bar', views.bar, name='menubar'),
     path('dish', views.dish, name='dish'),
     path('reservation', views.reservation, name='reservation'),
-    
+
 ]
