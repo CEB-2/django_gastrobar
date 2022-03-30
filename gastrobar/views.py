@@ -7,14 +7,14 @@ def home(request):
 	
 	return render(request, 'main.html')
 
-def bar(request):
+def menu(request):
 	gastrobar = gastrobar.objects.all()
 	context = {
 		'gastrobar' : gastrobar,
         
 	}
 
-	return render(request, 'bar.html', context)
+	return render(request, 'menu.html', context)
 
 def dish(request):
 	dish = Dish.objects.all()
