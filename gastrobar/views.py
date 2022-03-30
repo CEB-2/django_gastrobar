@@ -3,18 +3,27 @@ from django.http import HttpResponse
 from gastrobar.forms import ReservationForm
 from gastrobar.models import Reservation, Dish
 
-def home(request):
+def main(request):
 	
 	return render(request, 'main.html')
 
 def menu(request):
-	gastrobar = gastrobar.objects.all()
+	menu = menu.objects.all()
 	context = {
-		'gastrobar' : gastrobar,
+		'menu' : menu,
         
 	}
 
 	return render(request, 'menu.html', context)
+
+def carta(request):
+	carta = carta.objects.all()
+	
+	context = {
+		'carta' : carta,
+        
+	}
+	return render(request, 'carta.html', context)
 
 def dish(request):
 	dish = Dish.objects.all()
@@ -24,6 +33,7 @@ def dish(request):
         
 	}
 	return render(request, 'dish.html', context)
+
 
 def reservation(request):
 	form = ReservationForm()
@@ -48,3 +58,5 @@ def reservation(request):
     }
 
 	return render(request, 'reservation.html', context)
+
+	

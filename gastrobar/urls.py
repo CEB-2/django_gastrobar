@@ -2,8 +2,9 @@ from django.urls import path
 from gastrobar import views
 
 urlpatterns = [
-    path('', views.home, name='home'),
-    path('bar', views.bar, name='carta'),
+    path('', views.main, name='main'),
+    path('menu', views.menu, name='menu_dia'),
+    path('carta', views.carta, name='carta'),
     path('dish', views.dish, name='dish'),
     path('reservation', views.reservation, name='reservation'),
     
