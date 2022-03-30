@@ -1,0 +1,66 @@
+
+
+{% extends 'main.html' %} {% load static %} {% block page_content %}
+
+<!-- Menu -->
+<div id="menu" class="w3-container w3-black w3-xxlarge w3-padding-64">
+  <h1 class="w3-center w3-jumbo w3-padding-32">Los Platos</h1>
+  <div class="w3-row w3-center w3-border w3-border-dark-grey">
+    <a href="#primero"
+      ><div class="w3-third w3-padding-large w3-red">Primer Plato</div></a
+    >
+    <a href="#segundo"
+      ><div class="w3-third w3-padding-large w3-hover-red">
+        Segundo Plato
+      </div></a
+    >
+    <a href="#postre"
+      ><div class="w3-third w3-padding-large w3-hover-red">Postre</div></a
+    >
+  </div>
+
+  <h1 id="segundo" class="w3-center w3-jumbo w3-padding-32">PRIMER PLATO</h1>
+
+
+
+  <div id="primero" class="w3-container w3-white w3-padding-32">
+    {% for dish in dishes %}
+
+    <img
+      class="card-img-top"
+      src="{% static 'img/' %}{{dish.pk}}.jpg"
+      alt="platos"
+    />
+    <div class="card-body">
+      <h2 class="card-title">
+        <b>{{dish.name}}</b>
+        <span class="w3-right w3-tag w3-dark-grey w3-round"
+          >{{dish.price}}</span
+        >
+      </h2>
+      <p class="card-text-grey">{{dish.description}}</p>
+    </div>
+  </div>
+  {% endfor %}
+
+
+
+
+
+
+  
+
+  <h1 id="segundo" class="w3-center w3-jumbo w3-padding-32">SEGUNDO PLATO</h1>
+  <div class="w3-container w3-white w3-padding-32">
+    
+  </div>
+
+  <h1 id="postre" class="w3-center w3-jumbo w3-padding-32">POSTRE</h1>
+  <div class="w3-container w3-white w3-padding-32">
+    
+  </div>
+</div>
+
+{% endblock %}
+
+	
