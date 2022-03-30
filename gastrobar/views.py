@@ -4,8 +4,12 @@ from gastrobar.forms import ReservationForm
 from gastrobar.models import Reservation, Dish
 
 def main(request):
-	
-	return render(request, 'main.html')
+	carta = Dish.objects.all()
+	context = {
+		'carta' : carta,
+        
+	}
+	return render(request, 'carta.html', context)
 
 def menu(request):
 	menu = menu.objects.all()
