@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html>
+{%load static%}
     <head>
         <meta charset='utf-8'>
-        <link rel="stylesheet" href="/home/diego/Escritorio/django_gastrobar/gastrobar/static/css/styles.css">
+        <link rel="stylesheet" href="{% static 'css/styles.css' %}">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
 
@@ -13,7 +14,7 @@
         <header class="header">
             <nav class="navbar navbar-default">
                   <ul class="nav navbar-nav" class="nav">
-                    <li><a href="gastrobar/templates/main.html">Volver a GastroBar</a></li>
+                    <li><a href="gastrobar/templates/bar.html">Volver a GastroBar</a></li>
                   </ul>
               </nav>
         </header>
