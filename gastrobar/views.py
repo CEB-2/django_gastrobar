@@ -17,7 +17,7 @@ def menu(request):
 	return render(request, 'menu.html', context)
 
 def carta(request):
-	carta = carta.objects.all()
+	carta = Dish.objects.all()
 	
 	context = {
 		'carta' : carta,
