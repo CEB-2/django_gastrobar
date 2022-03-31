@@ -1,10 +1,11 @@
 from django.shortcuts import render
 from gastroblog.forms import CommentsForm
 from gastroblog.models import Comments
+from gastroblog.models import Article
 
 def blog(request):
     form = CommentsForm()
-
+    articles = Article.objects.all()
     if request.method == 'POST':
         form = CommentsForm(request.POST)
         if form.is_valid():
@@ -16,7 +17,9 @@ def blog(request):
             new_comment.save()
     context = {
        
-        'form' : form
+        'form' : form,
+        'articles' : articles
+        
     }
     return render(request, 'blog.html', context)
 # Create your views here.
