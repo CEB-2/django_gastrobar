@@ -7,5 +7,8 @@ urlpatterns = [
     path('carta', views.carta, name='carta'),
     path('dish', views.dish, name='dish'),
     path('reservation', views.reservation, name='reservation'),
+
+
+    
     
 ]
