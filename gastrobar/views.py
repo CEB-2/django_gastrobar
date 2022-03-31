@@ -21,26 +21,29 @@ def menu(request):
 	return render(request, 'menu.html', context)
 
 def carta(request):
-	cartaFirst = Dish.objects.filter(type="first")
+	cartaFirst = Dish.objects.all().filter(type="first")
 	cartaSecond = Dish.objects.all().filter(type="second")
 	cartaThird = Dish.objects.all().filter(type="dessert")
+	
 
 	context = {
 		'cartaFirst' : cartaFirst,
 		'cartaSecond' : cartaSecond,
 		'cartaThird' : cartaThird,
+		
+		
         
 	}
 	return render(request, 'carta.html', context)
 
-def dish(request):
-	dish = Dish.objects.all()
+def dish(request, pk):
+	dish = Dish.objects.get(pk=pk)
 	
 	context = {
 		'dish' : dish,
         
 	}
-	return render(request, 'dish.html', context)
+	return render(request, 'plato.html', context)
 
 
 def reservation(request):
@@ -66,5 +69,3 @@ def reservation(request):
     }
 
 	return render(request, 'reservation.html', context)
-
-	
