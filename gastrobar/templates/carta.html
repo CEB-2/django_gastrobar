@@ -31,7 +31,8 @@
     
     <div class="card-body">
       <h2 class="card-title">
-        <b>{{dish.name}}</b>
+
+        <b><a href = "{% url 'dish' dish.pk %}"> {{dish.name}} </a></b>
         <span class="w3-right w3-tag w3-dark-grey w3-round"
           >{{dish.price}}</span
         >
@@ -49,7 +50,7 @@
     
     <div class="card-body">
       <h2 class="card-title">
-        <b>{{dish.name}}</b>
+        <b><a href = "{% url 'dish' dish.pk %}"> {{dish.name}} </a></b>
         <span class="w3-right w3-tag w3-dark-grey w3-round"
           >{{dish.price}}</span
         >
