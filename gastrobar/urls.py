@@ -8,5 +8,8 @@ urlpatterns = [
     path('dish/<int:pk>/', views.dish, name='dish'),
     #path('<int:pk>/', views.dish, name='dish'),
     path('reservation', views.reservation, name='reservation'),
+
+
+    
     
 ]
