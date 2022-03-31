@@ -21,9 +21,9 @@ def menu(request):
 	return render(request, 'menu.html', context)
 
 def carta(request):
-	cartaFirst = Dish.objects.filter(type="first")
-	cartaSecond = Dish.objects.all().filter(type="second")
-	cartaThird = Dish.objects.all().filter(type="dessert")
+	cartaFirst = Dish.objects.filter(type="1")
+	cartaSecond = Dish.objects.all().filter(type="2")
+	cartaThird = Dish.objects.all().filter(type="3")
 
 	
 
