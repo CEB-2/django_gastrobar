@@ -15,31 +15,36 @@ class ReservationForm(forms.Form):
     mail = forms.EmailField(
         widget=forms.EmailInput(attrs={
             "class": "form-control",
-            "placeholder": "Email"
+            "placeholder": "Email",
+            "type" : "email"
         }))
 
     phone =forms.CharField(
     max_length=15,
     widget=forms.TextInput(attrs={
         "class": "form-control",
-        "placeholder": "Número de teléfono"
+        "placeholder": "Número de teléfono",
+        "type" : "number"
     }))
 
     date =forms.DateField(
     widget=forms.DateInput(attrs={
         "class": "form-control",
-        "placeholder": "Fecha"
+        "placeholder": "Fecha",
+        "type" : "date"
     }))
 
 
     time =forms.TimeField(
     widget=forms.TextInput(attrs={
         "class": "form-control",
-        "placeholder": "Hora"
+        "placeholder": "Hora",
+        "type" : "time"
     }))
 
     count_p =forms.IntegerField(
     widget=forms.NumberInput(attrs={
         "class": "form-control",
-        "placeholder": "Número de personas"
+        "placeholder": "Número de personas",
+        "type" : "number"
     }))

@@ -25,6 +25,8 @@ def carta(request):
 	cartaSecond = Dish.objects.all().filter(type="second")
 	cartaThird = Dish.objects.all().filter(type="dessert")
 
+	
+
 	context = {
 		'cartaFirst' : cartaFirst,
 		'cartaSecond' : cartaSecond,
@@ -63,8 +65,9 @@ def reservation(request):
 	context = {
 		'reservation' : reservation,
         'form' : form,
+		
     }
 
 	return render(request, 'reservation.html', context)
 
-	
+
