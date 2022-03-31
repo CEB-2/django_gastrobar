@@ -20,11 +20,12 @@ class ReservationForm(forms.Form):
         }))
 
     phone =forms.CharField(
-    max_length=15,
+    max_length=9,
     widget=forms.TextInput(attrs={
         "class": "form-control",
         "placeholder": "Número de teléfono",
-        "type" : "number"
+        "type" : "text",
+        "pattern" : "[0-9]+"
     }))
 
     date =forms.DateField(
