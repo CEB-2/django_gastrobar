@@ -16,12 +16,12 @@ def menu(request):
 	context = {
 		'menu' : menu,
 	}
-    return render(request, 'menu.html', context)
+	return render(request, 'menu.html', context)
 
 def carta(request):
-	cartaFirst = Dish.objects.all().filter(type="first")
-	cartaSecond = Dish.objects.all().filter(type="second")
-	cartaThird = Dish.objects.all().filter(type="dessert")
+	cartaFirst = Dish.objects.all().filter(type="1")
+	cartaSecond = Dish.objects.all().filter(type="2")
+	cartaThird = Dish.objects.all().filter(type="3")
 	
 
 	
