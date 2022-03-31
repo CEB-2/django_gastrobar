@@ -46,5 +46,6 @@ class ReservationForm(forms.Form):
     widget=forms.NumberInput(attrs={
         "class": "form-control",
         "placeholder": "Número de personas",
-        "type" : "number"
+        "type" : "number",
+        "min" : "0"
     }))
