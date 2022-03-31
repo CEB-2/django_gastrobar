@@ -7,7 +7,7 @@
 <div class="row">
     <div class="col-md-8">
 
-        <form action="/reservation" method="post">
+        <form action="/gastrobar/reservation" method="post">
         {% csrf_token %}
 
             <div class="form-group" >
@@ -34,7 +34,11 @@
                 {{form.count_p}}
             </div>
 
-            <button type="submit" class="btn btn-primary" >Hacer reserva</button>
+            <button type="submit" class="btn btn-primary">Hacer reserva</button>
+
+            {%if value%}
+                <p>Se ha enviado un mail de confirmación a su mail</p>
+            {% endif  %}
 
         </form>
     </div>

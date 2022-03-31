@@ -12,12 +12,13 @@ class Reservation(models.Model):
     phone = models.CharField(max_length=15, null = False, default = None)
     date = models.DateField(max_length=25, null = False, default = None)
     time = models.TimeField(max_length=5, null = False, default = None)
-    count_p = models.IntegerField()
+    count_p = models.IntegerField(null = False, default = None)
 
 
 class Dish(models.Model):
     name = models.CharField(max_length=100, null = False, default = None)
-    type = models.CharField(max_length=25, null = False, default = None)
+    type = models.IntegerField(null = False, default = None)
     description = models.TextField(null = False, default = None)
     price = models.CharField(max_length=15, null = False, default = None)
     photo = models.CharField(max_length=12, null = False, default = None)
+
