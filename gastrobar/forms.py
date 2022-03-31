@@ -48,4 +48,5 @@ class ReservationForm(forms.Form):
         "placeholder": "Número de personas",
         "type" : "number",
         "min" : "0"
+        
     }))
