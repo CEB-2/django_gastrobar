@@ -24,7 +24,7 @@ class ReservationForm(forms.Form):
     widget=forms.TextInput(attrs={
         "class": "form-control",
         "placeholder": "Número de teléfono",
-        "type" : "number"
+        "type" : "tel"
     }))
 
     date =forms.DateField(

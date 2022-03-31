@@ -47,24 +47,26 @@ def dish(request):
 
 def reservation(request):
 	form = ReservationForm()
-
+	value = False
 	if request.method == "POST":
 		form = ReservationForm(request.POST)
 		if form.is_valid():
-			new = Reservation()(
-				name=form.cleaned_data["name"],
-				mail=form.cleaned_data["mail"],
-                phone=form.cleaned_data["phone"],
-                date=form.cleaned_data["date"],
-                time=form.cleaned_data["time"],
-                count_p=form.cleaned_data["count_p"],
-			)
+			value = True
+			new = Reservation()
+
+			new.name = form.cleaned_data["name"]
+			new.mail = form.cleaned_data["mail"]
+			new.phone = form.cleaned_data["phone"]
+			new.date = form.cleaned_data["date"]
+			new.time = form.cleaned_data["time"]
+			new.count_p = form.cleaned_data["count_p"]
 			new.save()
 
 
 	context = {
 		'reservation' : reservation,
         'form' : form,
+		'value' : value,
 		
     }
 
