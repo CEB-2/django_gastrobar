@@ -3,14 +3,14 @@
 
 }
 
-.blog-div, .bar-div{
-  width: 50vw;
-  height: 100vh;
+.blog-div, .bar-div, .empleo-div{
+  width: 33vw;
+  height: 50vh;
   
 }
 
 
-.bar-title, .blog-title{
+.bar-title, .blog-title, .empleo-title{
   z-index: 1;
   position: absolute;
   
