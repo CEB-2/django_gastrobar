@@ -15,12 +15,13 @@ Including another URLconf
 """
 from django_gastrobar import views
 from django.urls import path, include
-from gastrobar import urls
-from gastroblog import urls
+
 
 
 urlpatterns = [
     path('', views.home, name='home'),
     path('gastrobar/', include('gastrobar.urls')),
     path('gastroblog/', include('gastroblog.urls')),
+    path('legalAdvice/',views.legal, name='legal'),
+    path('privacy/',views.privacy, name='privacy'),
 ]
