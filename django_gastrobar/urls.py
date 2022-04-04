@@ -17,10 +17,12 @@ from django_gastrobar import views
 from django.urls import path, include
 from gastrobar import urls
 from gastroblog import urls
+from gastroempleo import urls
 
 
 urlpatterns = [
     path('', views.home, name='home'),
     path('gastrobar/', include('gastrobar.urls')),
     path('gastroblog/', include('gastroblog.urls')),
+    path('gastroempleo/', include('gastroempleo.urls')),
 ]
