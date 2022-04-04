@@ -8,3 +8,6 @@ def legal(request):
 
 def privacy(request):
 	return render(request, 'privacy.html')
+
+def contact(request):
+	return render(request, 'contact.html')

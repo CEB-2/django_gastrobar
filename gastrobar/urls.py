@@ -8,6 +8,8 @@ urlpatterns = [
     path('dish/<int:pk>/', views.dish, name='dish'),
     #path('<int:pk>/', views.dish, name='dish'),
     path('reservation', views.reservation, name='reservation'),
+    path('contact', views.contact, name='contact'),
+    path('map', views.map, name='map'),
 
 
     

@@ -24,4 +24,5 @@ urlpatterns = [
     path('gastroblog/', include('gastroblog.urls')),
     path('legalAdvice/',views.legal, name='legal'),
     path('privacy/',views.privacy, name='privacy'),
+    path('contact/',views.contact, name='contact'),
 ]
