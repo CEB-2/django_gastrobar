@@ -1,39 +1,21 @@
-{% extends 'main.html' %}
-<!DOCTYPE html>
-<html>
-    {%load static%}
-
-    <head>
-        <meta charset='utf-8'>
-        <link rel="stylesheet" href="{% static 'css/styles.css' %}">
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
-
-        <title>GastroBros</title>
-        <meta name='viewport' content='width=device-width, initial-scale=1'>
-    </head>
-    <body class="body">
-        <header class="header">
+{% extends 'base.html' %}
+{%load static%}
+{% block page_content1 %}
             <nav class="navbar navbar-default">
                     <a class="navbar-brand" class="gastro" href="../">GastroBar</a>
                   <ul class="nav navbar-nav" class="nav">
                     <li><a href="carta">Carta</a></li>
                     <li><a href="menu">Menú del dia</a></li>
                     <li><a href="reservation">Reserva</a></li>
+                    <li><a href="map">¿Dónde estamos?</a></li>
+                    <li><a href="contact">Contacto</a></li>
                   </ul>
               </nav>
         </header>
+{% endblock %}
+{% block page_content2 %}
 
-        {% block page_content %}
+{% endblock %}
 
-        {% endblock %}
-
-        <div class="footer-basic">
-            <footer>
-                <div class="social"><a href="#"><i class="icon ion-social-instagram"></i></a><a href="#"><i class="icon ion-social-snapchat"></i></a><a href="#"><i class="icon ion-social-twitter"></i></a><a href="#"><i class="icon ion-social-facebook"></i></a></div>
-                <p class="copyright">GastroBar© 2022</p>
-            </footer>
-        </div>
-    </body>
-</html>
-
+        
+  

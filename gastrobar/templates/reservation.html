@@ -1,7 +1,7 @@
-{%extends 'main.html'%}
+{% include 'main.html'%}
 {% load static %}
 
-{%block page_content %}
+{%block page_content2 %}
 <h1>Reserva</h1>
 
 <div class="row">
@@ -21,7 +21,7 @@
             <div class="form-group" >
                 {{form.phone}}
             </div>
-
+ 
             <div class="form-group" >
                 {{form.date}}
             </div>

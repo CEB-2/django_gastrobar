@@ -1,23 +1,20 @@
-h1{ color: rgb(205, 92, 92); }
-
 body {
     font-family: "Open Sans Condensed", sans-serif;
-    font-size: 35pt;
-    background-color: #ff8800;
+    font-size: 50pt;
+    background: #f7e691;
     text-align: center;
     line-height: 1.2em;
-    padding-top: 70px;
   }
   
-  .dashed-shadow {
+.dashed-shadow {
     position: relative;
     top: 8px;
     left: 8px;
     display: inline-block;
-    color: #900C3F;
-  }
+    color: #900c3f;
+}
   
-  @keyframes dash-animation {
+@keyframes dash-animation {
     0% {
       background-position: 0 0;
     }
@@ -25,6 +22,7 @@ body {
       background-position: 100% 0;
     }
   }
+
   .dashed-shadow:before {
     content: " ";
     display: block;
@@ -46,21 +44,6 @@ body {
     animation: dash-animation 30s infinite linear;
   }
   
-  .dashed-shadow:after {
-    z-index: 2;
-    content: attr(data-text);
-    position: absolute;
-    left: -8px;
-    top: -8px;
-    color: #b85b3f;
-    text-shadow: 3px 3px #e8e3c7;
-  }
-  
-  .hello {
-    font-family: "Cookie", cursive;
-    font-size: 140pt;
-  }
-  
   .sorta-block {
     font-size: 50pt;
     line-height: 1.1em;
@@ -72,28 +55,24 @@ body {
     position: relative;
     margin-top: 20px;
     margin-bottom: 10px;
+    color: #900c3f;
   }
-  
-  .sorta {
-    border-top: 4px solid #b85b3f;
-    border-bottom: 4px solid #b85b3f;
-    text-transform: uppercase;
-    z-index: 3;
-    font-style: italic;
-  }
-  
+
   .hipsterish {
     font-family: "Sancreek", cursive;
-    font-size: 70pt;
+    font-size: 50pt;
+    color: #900c3f;
   }
   
   .dashed-shadow-text {
-    font-size: 140pt;
+    font-size: 100pt;
     line-height: 0.7em;
+    color: #900c3f;
   }
   
   .shadow {
-    font-size: 120pt;
+    color: #900c3f;
+    font-size: 100pt;
     line-height: 0.8em;
   }
   

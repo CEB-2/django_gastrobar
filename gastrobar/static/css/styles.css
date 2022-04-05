@@ -19,9 +19,15 @@
     padding:40px;
     background-color:#ffffff;
     color:#4b4c4d;
-    position: absolute;
+    position: fixed;
     bottom: 0;
-    width: 100%;
+    width: 100%; 
+     
+    
+}
+
+.header img{
+  margin-left: 89%;
 }
   
   .footer-basic ul {
@@ -30,7 +36,6 @@
     text-align:center;
     font-size:18px;
     line-height:1.6;
-    margin-bottom:0;
   }
   
   
@@ -50,7 +55,7 @@
   
   .footer-basic .social {
     text-align:center;
-    padding-bottom:25px;
+    padding: bottom 0px;;
   }
   
   .footer-basic .social > a {

@@ -90,3 +90,7 @@ def reservation(request):
 def calc_menu(val1, val2):
     random.seed(datetime.today().strftime("gY-&m-%d"))
     return random. randint(val1, val2)
+
+
+def map(request):
+	return render(request, 'map.html') 

@@ -8,13 +8,15 @@ class CommentsForm(forms.Form):
     user=forms.CharField(
         max_length=20,
         widget=forms.TextInput(attrs={
-            "class": "form-control",
-            "placeholder": "Nombre"
+            "class" : "form-control",
+            "placeholder" : "Nombre"
         }))
 
     comment = forms.CharField(
         widget=forms.Textarea(attrs={
-            "class": "form-control",
-            "placeholder": "Comentario"
+            "class" : "form-control",
+            "placeholder" : "Comentario"
         }))
 
+    article_id = forms.CharField(
+        widget=forms.TextInput())

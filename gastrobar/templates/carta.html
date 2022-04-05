@@ -1,23 +1,18 @@
-<!DOCTYPE html>
 
-  {% extends 'main.html' %} {% load static %} {% block page_content %}
 
+ {% include 'main.html' %}  {% load static %}
+ {% block page_content2 %}
   <link rel="stylesheet" href="{% static 'css/carta.css' %}">
   <link href='https://fonts.googleapis.com/css?family=Cookie' rel='stylesheet' type='text/css'>
   <link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:700' rel='stylesheet' type='text/css'>
   <link href='https://fonts.googleapis.com/css?family=Sancreek' rel='stylesheet' type='text/css'>
 
-
-  <body style="background-color:rgb(253, 235, 208);">
-    <!-- Menu -->
-    <div class="menu">
-      <h1 id="menu" class="dashed-shadow carta">CARTA</h1>
+  <body>
+    <div class="carta">
+      <div class=" dashed">CARTA</div>
     </div>
-
-      <br>
-
       <div class="PRIMER PLATO">
-        <div id="primero" class="dashed-shadow">PRIMER PLATO</div>
+        <div id="primero" class="hipsterish">PRIMER PLATO</div>
       </div>
 
       <div id="primero" class="w3-container w3-white w3-padding-32">
@@ -35,9 +30,8 @@
       {% endfor %}
 
       <br>
-
-      <div class="bg-3">
-        <div id="segundo" class="dashed-shadow">SEGUNDO PLATO</div>
+      <div class="sorta-block">
+        <div id="segundo" class="sorta">SEGUNDO PLATO</div>
       </div>
 
       <div class="w3-container w3-white w3-padding-32">
@@ -53,11 +47,10 @@
         </div>
       </div>
       {% endfor %}
-
         
       <br>
       <div class="sorta-block">
-        <div class="dashed-shadow hipsterish">POSTRE</div>
+        <div class="dashed-shadow hipsterish">POSTRE</div> <br />
       </div>
       <div class="w3-container w3-white w3-padding-32">
         {% for plato in cartaThird %}
@@ -72,11 +65,6 @@
         </div>
       </div>
       {% endfor %}
-        
-      </div>
-    </div>
-
     {% endblock %}
 
-  </body>
-</html>
+ 

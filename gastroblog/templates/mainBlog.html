@@ -1,35 +1,19 @@
-{%extends 'base.html'%} <!--nombre temporal al html de la base general-->
-<!DOCTYPE html>
-<html>
+{% extends 'base.html'%} <!--nombre temporal al html de la base general-->
+
+{% block page_content1 %}
 {%load static%}
-    <head>
-        <title>GastroBlog</title>
-        <meta name='viewport' content='width=device-width, initial-scale=1'>
-    </head>
-    <body class="body">
-        <header class="header">
             <nav class="navbar navbar-default">
                   <ul class="nav navbar-nav" class="nav">
+                    <li><a href="">Inicio</a></li>
                     <li><a href="contact">Contacto</a></li>
                   </ul>
               </nav>
         </header>
 
-        {% block page_content %}
+       
 
-        {% endblock %}
-
-        <!-- footer comentado porque irá en el html de la base general
-            <div class="footer-basic">
-                <footer>
-                    <div class="social"><a href="#"><i class="icon ion-social-instagram"></i></a><a href="#"><i class="icon ion-social-snapchat"></i></a><a href="#"><i class="icon ion-social-twitter"></i></a><a href="#"><i class="icon ion-social-facebook"></i></a></div>
-                    <p class="copyright">GastroBlog© 2022</p>
-                </footer>
-            </div>
-
-        -->
-    </body>
-</html>
+{% endblock %}
+{% block page_content2 %}
 
 {% endblock %}
 
