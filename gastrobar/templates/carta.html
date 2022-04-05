@@ -1,13 +1,13 @@
-<!DOCTYPE html>
 
- {% extends 'main.html' %}  {% load static %} {% block page_content2 %}
 
+ {% include 'main.html' %}  {% load static %}
+ {% block page_content2 %}
   <link rel="stylesheet" href="{% static 'css/carta.css' %}">
   <link href='https://fonts.googleapis.com/css?family=Cookie' rel='stylesheet' type='text/css'>
   <link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:700' rel='stylesheet' type='text/css'>
   <link href='https://fonts.googleapis.com/css?family=Sancreek' rel='stylesheet' type='text/css'>
 
-
+ 
   <body style="background-color:rgb(253, 235, 208);">
     <!-- Menu -->
     <div class="menu">
@@ -72,11 +72,5 @@
         </div>
       </div>
       {% endfor %}
-        
-      </div>
-    </div>
-
     {% endblock %}
 
-  </body>
-</html>
