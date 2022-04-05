@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    {%load static%}
+
+    <head>
+        <meta charset='utf-8'>
+        <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+
+        <title>GastroBros</title>
+        <meta name='viewport' content='width=device-width, initial-scale=1'>
+    </head>
+    <body class="body">
+        <header class="header">
+
+    {% block page_content %}
+
+    {% endblock %}
+    
+    <div class="footer-basic">
+        <footer>
+            <div class="social"><a href="#"><i class="icon ion-social-instagram"></i></a><a href="#"><i class="icon ion-social-snapchat"></i></a><a href="#"><i class="icon ion-social-twitter"></i></a><a href="#"><i class="icon ion-social-facebook"></i></a></div>
+            <p class="copyright">GastroBar© 2022</p>
+            <a href="../legalAdvice">Aviso legal<a/>
+        </footer>
+    </div>
+</body>
+</html>
