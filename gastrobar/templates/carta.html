@@ -16,13 +16,13 @@
       </div>
 
       <div id="primero" class="w3-container w3-white w3-padding-32">
-        {% for plato in cartaFirst %}
+        {% for dish in cartaFirst %}
         
         <div class="card-body">
           <h2 class="card-title">
-            <b>{{plato.name}}</b>
+            <b><a href = "{% url 'dish' dish.pk %}"> {{dish.name}} </a></b>
             <span class="w3-right w3-tag w3-dark-grey w3-round"
-              >{{plato.price}}</span
+              >{{dish.price}}</span
             >
           </h2>
         </div>
@@ -31,17 +31,17 @@
 
       <br>
       <div class="sorta-block">
-        <div id="segundo" class="sorta">SEGUNDO PLATO</div>
+        <div id="segundo" class="sorta">SEGUNDO PALTO</div>
       </div>
 
       <div class="w3-container w3-white w3-padding-32">
-        {% for plato in cartaSecond %}
+        {% for dish in cartaSecond %}
         
         <div class="card-body">
           <h2 class="card-title">
-            <b>{{plato.name}}</b>
+            <b><a href = "{% url 'dish' dish.pk %}"> {{dish.name}} </a></b>
             <span class="w3-right w3-tag w3-dark-grey w3-round"
-              >{{plato.price}}</span
+              >{{dish.price}}</span
             >
           </h2>
         </div>
@@ -53,13 +53,13 @@
         <div class="dashed-shadow hipsterish">POSTRE</div> <br />
       </div>
       <div class="w3-container w3-white w3-padding-32">
-        {% for plato in cartaThird %}
+        {% for dish in cartaThird %}
         
         <div class="card-body">
           <h2 class="card-title">
-            <b>{{plato.name}}</b>
+            <b><a href = "{% url 'dish' dish.pk %}"> {{dish.name}} </a></b>
             <span class="w3-right w3-tag w3-dark-grey w3-round"
-              >{{plato.price}}</span
+              >{{dish.price}}</span
             >
           </h2>
         </div>
