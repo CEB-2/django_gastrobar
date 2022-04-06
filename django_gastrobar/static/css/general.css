@@ -5,7 +5,7 @@ body{
 
 
 /* Home */
-.home-body{
+.home_body{
     background-image: url('/static/img/django.jpg');
     background-repeat: no-repeat;
     background-size: cover;
