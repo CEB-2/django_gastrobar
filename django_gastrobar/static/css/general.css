@@ -1,5 +1,11 @@
-/* Home */
+/* Global */
 body{
+    background-color: #efbb38;
+}
+
+
+/* Home */
+.home-body{
     background-image: url('/static/img/django.jpg');
     background-repeat: no-repeat;
     background-size: cover;

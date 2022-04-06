@@ -27,7 +27,7 @@ body{
   backdrop-filter: blur( 8px );
   -webkit-backdrop-filter: blur( 8px );
   border-radius: 10px;
-  border: 0.3em solid #efbb38;;
+  border: 0.3em solid #efbb38;
 }
 
 .blog-div:hover, .bar-div:hover, .empleo-div:hover{
