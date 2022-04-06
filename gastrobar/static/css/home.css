@@ -1,17 +1,45 @@
+body{
+  background-image: url('/static/img/django.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  
+}
 .container{
   display: flex;
-
+  position: absolute;
+  bottom: 5em;
+  justify-content: center;
 }
 
 .blog-div, .bar-div, .empleo-div{
-  width: 33vw;
-  height: 50vh;
-  
+  width: 20vw;
+  height: 10vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 1em;
+  text-transform: uppercase;
+  color: #ffff;
+  background: rgba( 255, 255, 255, 0.15 );
+  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+  backdrop-filter: blur( 8px );
+  -webkit-backdrop-filter: blur( 8px );
+  border-radius: 10px;
+  border: 0.3em solid #efbb38;;
 }
 
+.blog-div:hover, .bar-div:hover, .empleo-div:hover{
+  background: rgba(0, 0, 0, 0.377);
+  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+  backdrop-filter: blur( 10px );
+  -webkit-backdrop-filter: blur( 10px );
+  transition: 0.7;
 
-.bar-title, .blog-title, .empleo-title{
-  z-index: 1;
-  position: absolute;
-  
+}
+
+a{
+  color: rgb(255, 255, 255);
+  text-decoration: none;
 }
