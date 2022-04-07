@@ -1,6 +1,6 @@
 /* Global */
 body{
-    background-color: #efbb38;
+    background-color: #f0bc38;
 
 }
 
@@ -73,24 +73,20 @@ button[type=submit]:hover{
   padding-right: 1%;
 }
 
-.our_menu h2,h1{
+.our_menu h2,h1,a{
   color: white;
   text-decoration: bold;
-
-
 }
 
 
 
-/* Header */
 
 
-/* Nav */
+
 
 
 /* Body Blog */
 
-/* Body Contacto */
 
 /* Body Carta*/
 
@@ -100,11 +96,12 @@ button[type=submit]:hover{
 
 /* Body Menu */
 
-/* Body Plato */
+
+
 
 /* Body Reserva */
 
-/* Body Donde Estamos */
+
 
 
 
