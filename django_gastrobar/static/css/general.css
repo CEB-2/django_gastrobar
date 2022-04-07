@@ -79,13 +79,19 @@ button[type=submit]:hover{
   text-align: center;
   padding-right: 1%;
   font-size: 1.2em;
+  color:black;
 }
 
-.our_menu h2,h1,a{
+.our_menu, .our_menu h2, .our_menu a{
   color: white;
   text-decoration: bold;
   
 }
+
+.our_menu, .our_menu h1 {
+  color:black;
+}
+
 
 
 
@@ -175,5 +181,9 @@ button[type=submit]:hover{
     font-size:13px;
     color:#aaa;
     margin-bottom:0;
+  }
+
+  .footer-basic a{
+    color:black
   }
   
