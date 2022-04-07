@@ -68,6 +68,19 @@ button[type=submit]:hover{
     text-decoration: none;
 }
 
+.our_menu{
+  text-align: center;
+  padding-right: 1%;
+}
+
+.our_menu h2,h1{
+  color: white;
+  text-decoration: bold;
+
+
+}
+
+
 
 /* Header */
 
