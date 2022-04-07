@@ -1,6 +1,14 @@
 /* Global */
+
+html {
+  min-height: 100%;
+  position: relative;
+}
+
 body{
     background-color: #f0bc38;
+    margin: 0;
+    margin-bottom: 150px;
 
 }
 
@@ -190,6 +198,7 @@ button[type=submit]:hover{
     position: absolute;
     bottom: 0;
     width: 100%;
+
 }
   
   .footer-basic ul {
