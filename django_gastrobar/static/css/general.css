@@ -1,6 +1,6 @@
 /* Global */
 body{
-    background-color: #efbb38;
+    background-color: #f0bc38;
 
 }
 
@@ -76,8 +76,6 @@ button[type=submit]:hover{
 .our_menu h2,h1{
   color: white;
   text-decoration: bold;
-
-
 }
 
 
