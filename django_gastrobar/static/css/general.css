@@ -12,6 +12,12 @@ h1{
   margin: 0 auto;
   padding-left: 2em;
   padding-right: 2em;
+  margin-left: 40%;
+}
+
+.divForm input{
+  width: 25%;
+  
 }
 
 button[type=submit]{
