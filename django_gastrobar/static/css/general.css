@@ -7,6 +7,11 @@ body{
 h1{
   font-weight: bold;
 }
+a{
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  font-style: italic;
+}
 
 .divForm{
   margin: 0 auto;
