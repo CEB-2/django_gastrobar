@@ -33,7 +33,8 @@ def menu(request):
 	    'dish_second':  dish_second, 
         'dish_dessert': dish_dessert,
 		'dish_price' : dish_price,
-		'format_dish_price' : format_dish_price
+		'format_dish_price' : format_dish_price,
+		
 	
     }
     # pasar primary key de los platos
