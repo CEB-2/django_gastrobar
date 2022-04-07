@@ -2,8 +2,8 @@
 {% load static %}
 
 {% block page_content2%}
-<h1>Blog</h1>
-<body>
+<h1 class="title">Blog</h1>
+<body class="blog">
 
 
 <div class="row">
@@ -11,7 +11,7 @@
         
         {% for article in articles %}
 
-            <div>
+            <div class="articulo" >
                 {{article.content}}
             </div>
 
@@ -36,11 +36,11 @@
                 
                     {% if comment.article_id == article.pk %}
                     
-                        <div>
+                        <div class="user">
                             {{comment.user}}
                         </div>
 
-                        <div>
+                        <div class="comment">
                             {{comment.comment}}
                         </div>
 
@@ -55,4 +55,3 @@
 </div>
 
 {%endblock%}
-
