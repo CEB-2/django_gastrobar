@@ -13,6 +13,7 @@ h1{
   padding-left: 2em;
   padding-right: 2em;
   margin-left: 40%;
+  
 }
 
 .divForm input{
@@ -77,11 +78,13 @@ button[type=submit]:hover{
 .our_menu{
   text-align: center;
   padding-right: 1%;
+  font-size: 1.2em;
 }
 
 .our_menu h2,h1,a{
   color: white;
   text-decoration: bold;
+  
 }
 
 
