@@ -13,45 +13,45 @@
 
       <h1>Carta</h1>
 
-      <h2>Primer plato</h2>
-      {% for dish in cartaFirst %}
-          
-      <div class="card-body">
-        <h3 class="card-title">
-          <b><a href = "{% url 'dish' dish.pk %}"> {{dish.name}} </a></b>
-          <span class="w3-right w3-tag w3-dark-grey w3-round">{{dish.price}}€</span>
-        </h3>
-      </div>
-      {% endfor %}
+          <h2>Primer plato</h2>
+          {% for dish in cartaFirst %}
+              
+          <div class="card-body">
+            <h3 class="card-title">
+              <b><a href = "{% url 'dish' dish.pk %}"> {{dish.name}} </a></b>
+              <span class="w3-right w3-tag w3-dark-grey w3-round">{{dish.price}}€</span>
+            </h3>
+          </div>
+          {% endfor %}
 
-      <br>
+          <br>
 
-      <h2>Segundo plato</h2>
-      {% for dish in cartaSecond %}
-          
-      <div class="card-body">
-        <h3 class="card-title">
-          <b><a href = "{% url 'dish' dish.pk %}"> {{dish.name}} </a></b>
-          <span class="w3-right w3-tag w3-dark-grey w3-round">{{dish.price}}€</span>
-        </h3>
-      </div>
-      {% endfor %}
-          
-      <br>
+          <h2>Segundo plato</h2>
+          {% for dish in cartaSecond %}
+              
+          <div class="card-body">
+            <h3 class="card-title">
+              <b><a href = "{% url 'dish' dish.pk %}"> {{dish.name}} </a></b>
+              <span class="w3-right w3-tag w3-dark-grey w3-round">{{dish.price}}€</span>
+            </h3>
+          </div>
+          {% endfor %}
+              
+          <br>
 
-      <h2>Postre</h2>
-      {% for dish in cartaThird %}
-          
-      <div class="card-body">
-        <h3 class="card-title">
-          <b><a href = "{% url 'dish' dish.pk %}"> {{dish.name}} </a></b>
-          <span class="w3-right w3-tag w3-dark-grey w3-round">{{dish.price}}€</span>
-        </h3>
-      </div>
+          <h2>Postre</h2>
+          {% for dish in cartaThird %}
+              
+          <div class="card-body">
+            <h3 class="card-title">
+              <b><a href = "{% url 'dish' dish.pk %}"> {{dish.name}} </a></b>
+              <span class="w3-right w3-tag w3-dark-grey w3-round">{{dish.price}}€</span>
+            </h3>
+          </div>
+          {% endfor %}
 
       
     </div>
-      {% endfor %}
     {% endblock %}
 
  
