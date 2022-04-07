@@ -2,36 +2,31 @@
 {% load static %}
 {% block page_content2 %}
 
-	
-<head>
-	<link rel="stylesheet" href="{% static 'css/general.css' %}">
-	<script src="http://code.jquery.com/jquery-latest.js"> </script>
-	<script src="/static/css/gastrobar.js"></script>
-</head>
 	<body>
-			<header>
-			<h1 id="title">GastroBar</h1>
-		</header>
+		
+			
+		
 
 
   <div class="our_menu" >
+	<h1 id="title">GastroBar</h1>
 	  <h2>MENU DEL DÍA</h2> 
 	  
 	  <h3>Ofertas de hoy</h3>
 	  <br>
 	<h4>De Primero </h4>
 	{%for x in dish_first%}
-	  <p>{{x.name}}</p>
+		<b><a href = "{% url 'dish' x.pk %}"> {{x.name}} </a></b>
 	  {%endfor%}
 	  <br>
 	<h4>De Segundo </h4>  
 	{%for y in dish_second%}
-	  <p>{{y.name}}</p>
+	<b><a href = "{% url 'dish' y.pk %}"> {{y.name}} </a></b>
 	  {%endfor%}
 	  <br>
 	<h4>De Postre </h4>
 	{%for z in dish_dessert%}
-	  <p>{{z.name}}</p>
+	<b><a href = "{% url 'dish' z.pk %}"> {{z.name}} </a></b>
 	{%endfor%}
 	<br>
 

@@ -8,63 +8,50 @@
   <link href='https://fonts.googleapis.com/css?family=Sancreek' rel='stylesheet' type='text/css'>
 
   <body>
+
     <div class="carta">
-      <div class=" dashed">CARTA</div>
+
+      <h1>Carta</h1>
+
+          <h2>Primer plato</h2>
+          {% for dish in cartaFirst %}
+              
+          <div class="card-body">
+            <h3 class="card-title">
+              <b><a href = "{% url 'dish' dish.pk %}"> {{dish.name}} </a></b>
+              <span class="w3-right w3-tag w3-dark-grey w3-round">{{dish.price}}€</span>
+            </h3>
+          </div>
+          {% endfor %}
+
+          <br>
+
+          <h2>Segundo plato</h2>
+          {% for dish in cartaSecond %}
+              
+          <div class="card-body">
+            <h3 class="card-title">
+              <b><a href = "{% url 'dish' dish.pk %}"> {{dish.name}} </a></b>
+              <span class="w3-right w3-tag w3-dark-grey w3-round">{{dish.price}}€</span>
+            </h3>
+          </div>
+          {% endfor %}
+              
+          <br>
+
+          <h2>Postre</h2>
+          {% for dish in cartaThird %}
+              
+          <div class="card-body">
+            <h3 class="card-title">
+              <b><a href = "{% url 'dish' dish.pk %}"> {{dish.name}} </a></b>
+              <span class="w3-right w3-tag w3-dark-grey w3-round">{{dish.price}}€</span>
+            </h3>
+          </div>
+          {% endfor %}
+
+      
     </div>
-      <div class="PRIMER PLATO">
-        <div id="primero" class="hipsterish">PRIMER PLATO</div>
-      </div>
-
-      <div id="primero" class="w3-container w3-white w3-padding-32">
-        {% for dish in cartaFirst %}
-        
-        <div class="card-body">
-          <h2 class="card-title">
-            <b><a href = "{% url 'dish' dish.pk %}"> {{dish.name}} </a></b>
-            <span class="w3-right w3-tag w3-dark-grey w3-round"
-              >{{dish.price}} €</span
-            >
-          </h2>
-        </div>
-      </div>
-      {% endfor %}
-
-      <br>
-      <div class="sorta-block">
-        <div id="segundo" class="sorta">SEGUNDO PALTO</div>
-      </div>
-
-      <div class="w3-container w3-white w3-padding-32">
-        {% for dish in cartaSecond %}
-        
-        <div class="card-body">
-          <h2 class="card-title">
-            <b><a href = "{% url 'dish' dish.pk %}"> {{dish.name}} </a></b>
-            <span class="w3-right w3-tag w3-dark-grey w3-round"
-              >{{dish.price}} €</span
-            >
-          </h2>
-        </div>
-      </div>
-      {% endfor %}
-        
-      <br>
-      <div class="sorta-block">
-        <div class="dashed-shadow hipsterish">POSTRE</div> <br />
-      </div>
-      <div class="w3-container w3-white w3-padding-32">
-        {% for dish in cartaThird %}
-        
-        <div class="card-body">
-          <h2 class="card-title">
-            <b><a href = "{% url 'dish' dish.pk %}"> {{dish.name}} </a></b>
-            <span class="w3-right w3-tag w3-dark-grey w3-round"
-              >{{dish.price}} €</span
-            >
-          </h2>
-        </div>
-      </div>
-      {% endfor %}
     {% endblock %}
 
  

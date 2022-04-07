@@ -1,6 +1,6 @@
 /* Global */
 body{
-    background-color: #efbb38;
+    background-color: #f0bc38;
 
 }
 
@@ -12,6 +12,13 @@ h1{
   margin: 0 auto;
   padding-left: 2em;
   padding-right: 2em;
+  margin-left: 40%;
+  
+}
+
+.divForm input{
+  width: 25%;
+  
 }
 
 button[type=submit]{
@@ -68,11 +75,29 @@ button[type=submit]:hover{
     text-decoration: none;
 }
 
+.our_menu{
+  text-align: center;
+  padding-right: 1%;
+  font-size: 1.2em;
+  color:black;
+}
 
-/* Header */
+.our_menu, .our_menu h2, .our_menu a{
+  color: white;
+  text-decoration: bold;
+  
+}
+
+.our_menu, .our_menu h1 {
+  color:black;
+}
 
 
-/* Nav */
+
+
+
+
+
 
 
 /* Body Blog */
@@ -119,9 +144,14 @@ button[type=submit]:hover{
 
 /* Body Carta*/
 
+.carta{
+  text-align: center;
+}
+
 /* Body Menu */
 
-/* Body Plato */
+
+
 
 .bodyPlato{
     padding: 50px;
@@ -149,16 +179,14 @@ button[type=submit]:hover{
 
 /* Body Reserva */
 
-/* Body Donde Estamos */
+
 
 
 
 
 .footer-basic {
-    padding:40px;
     background-color:#ffffff;
     color:#4b4c4d;
-    position: absolute;
     bottom: 0;
     width: 100%;
 }
@@ -216,5 +244,9 @@ button[type=submit]:hover{
     font-size:13px;
     color:#aaa;
     margin-bottom:0;
+  }
+
+  .footer-basic a{
+    color:black
   }
   
