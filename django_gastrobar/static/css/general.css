@@ -93,10 +93,8 @@ button[type=submit]:hover{
 
 
 .footer-basic {
-    padding:40px;
     background-color:#ffffff;
     color:#4b4c4d;
-    position: absolute;
     bottom: 0;
     width: 100%;
 }
