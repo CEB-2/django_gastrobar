@@ -3,5 +3,5 @@ from gastroempleo import views
 
 urlpatterns = [
     path('', views.home, name='home'),
-    path('/offer', views.offer, name='offer'),
+    path('offer', views.offer, name='offer'),
 ]
