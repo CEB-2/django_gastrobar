@@ -1,1 +1,26 @@
-<h1>GatroEmpleo</h1>
+{%extends 'base.html'%}
+{% load static %}
+
+{%block page_content1 %}
+</header>
+
+<h1>Ofertas de empleo</h1>
+<div class="row">
+{% for empleo in empleos %}
+    <div class="col-md-4">
+        <div class="card mb-2">
+            <img  class="card-img-top" src="{% static 'img/'%}{{empleo.foto}}.png">
+            
+            <div class="card-body">
+                <h2  class="card-title">{{empleo.puesto}}</h2>
+                <a class="btn btn-primary" href="{% url 'offer' empleo.pk%}">Ver oferta</a>
+            </div>
+        </div>
+    </div>
+{%endfor%}
+</div>
+
+    
+
+{%endblock%}
+
