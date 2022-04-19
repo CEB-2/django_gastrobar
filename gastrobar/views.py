@@ -12,6 +12,7 @@ def main(request):
 	}
 	return render(request, 'carta.html', context)
 	
+	
 
 def menu(request):
 	dish = Dish.objects.all()
