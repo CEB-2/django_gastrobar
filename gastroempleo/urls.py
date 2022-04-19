@@ -1,5 +1,8 @@
-from django.urls import path
-from . import views
+from django.urls import path, include
+from gastroempleo import views
+from gastrobar import urls
+from gastroblog import urls
+from gastroempleo import urls
 
 urlpatterns = [
 
