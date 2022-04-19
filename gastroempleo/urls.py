@@ -1,10 +1,7 @@
-from django.urls import path, include
+from django.urls import path
 from gastroempleo import views
-from gastrobar import urls
-from gastroblog import urls
-from gastroempleo import urls
 
 urlpatterns = [
-
     path('', views.home, name='home'),
+    path('/offer', views.offer, name='offer'),
 ]

@@ -1,6 +1,7 @@
 from django.shortcuts import render
 from django.http import HttpResponse
 from gastrobar.forms import ReservationForm
+from gastrobar.forms import ContactoForm
 from gastrobar.models import Reservation, Dish
 import random
 from datetime import datetime
@@ -11,6 +12,7 @@ def main(request):
 		'carta' : carta,
 	}
 	return render(request, 'carta.html', context)
+	
 	
 
 def menu(request):
@@ -61,6 +63,8 @@ def dish(request, pk):
 	}
 	return render(request, 'plato.html', context)
 
+def homeGB(request):
+	return render(request, 'homeGB.html')
 
 def reservation(request):
 	form = ReservationForm()
@@ -96,3 +100,23 @@ def calc_menu(val1, val2):
 
 def map(request):
 	return render(request, 'map.html') 
+
+def contacto(request):
+	form = ContactoForm()
+	value = False
+	if request.method == "POST":
+		form = ContactoForm(request.POST)
+		if form.is_valid():
+			value = True
+			new = Contacto()
+
+			new.name = form.cleaned_data["name"]
+			new.mail = form.cleaned_data["mail"]
+
+	context = {
+		'contacto' : contacto,
+        'form' : form,
+		'value' : value,
+    }
+
+	return render(request, 'contacto.html', context)
