@@ -1,24 +1,20 @@
-{% extends 'main.html' %}
-{%load static %}
-{% block page_content2 %}
+{% extends 'main.html' %} {%load static %} {% block page_content2 %}
 
-<div class = "row">
-	<div class="col-md-4">
-            <img class="card-img-top" src="{% static 'img/' %}{{dish.photo}}" alt="home"/>
-	
-            <div class = "card mb-4">
-            	<h2> {{dish.name}}</h2>
-            </div>
-            <div class = "card mb-4">
-            	<h2> {{dish.price}}</h2>
-            </div>
-            
-            <div class="col-md-8">
-                <p> {{dish.description}}</p>
-            </div>
-        </div> 
-   
+<div class="bodyPlato">
+  <div class="plato">
+    <img
+      class="plato_image"
+      src="{% static 'img/' %}{{dish.photo}}"
+      alt="plato"
+    />
+    <div class="plato_text">
+      <h2 class="dishName">{{dish.name}}</h2>
+
+      <h3 class="dishPrice">{{dish.price}} €</h3>
+
+      <p class="dishDescription">{{dish.description}}</p>
+    </div>
+  </div>
 </div>
- 
+
 {% endblock %}
- 
