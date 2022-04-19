@@ -1,7 +1,12 @@
 /* Global */
+html {
+  min-height: 100%;
+  position: relative;
+}
+
 body{
   background-color: #f0bc38;
-
+  margin-bottom: 150px;
 }
 
 h1{
