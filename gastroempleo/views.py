@@ -1,8 +1,20 @@
 from django.shortcuts import render
 from django.http import HttpResponse
-
-def offer(request):
-    return render(request, 'offer.html') 
+from gastroempleo.models import Empleo
 
 def home(request):
-    return render(request, 'homeGE.html')
+    empleos = Empleo.objects.all()
+    context = {
+		'empleos' : empleos,
+	}
+
+    return render(request, 'homeGE.html', context)
+
+
+def offer(request, pk):
+    empleo = Empleo.objects.get(pk=pk)
+	
+    context = {
+		'empleo' : empleo,
+	}
+    return render(request, 'offer.html', context) 
