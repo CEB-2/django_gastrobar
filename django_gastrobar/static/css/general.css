@@ -1,17 +1,37 @@
 /* Global */
+
+html {
+  min-height: 100%;
+  position: relative;
+}
+
 body{
-    background-color: #efbb38;
+    background-color: #f0bc38;
+    margin: 0;
+    margin-bottom: 150px;
 
 }
 
 h1{
   font-weight: bold;
 }
+a{
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  font-style: italic;
+}
 
 .divForm{
   margin: 0 auto;
   padding-left: 2em;
   padding-right: 2em;
+  margin-left: 40%;
+  
+}
+
+.divForm input{
+  width: 25%;
+  
 }
 
 button[type=submit]{
@@ -71,39 +91,106 @@ button[type=submit]:hover{
 .our_menu{
   text-align: center;
   padding-right: 1%;
+  font-size: 1.2em;
+  color:black;
 }
 
-.our_menu h2,h1{
+.our_menu, .our_menu h2, .our_menu a{
   color: white;
   text-decoration: bold;
+  
+}
 
-
+.our_menu, .our_menu h1 {
+  color:black;
 }
 
 
 
-/* Header */
 
 
-/* Nav */
+
+
 
 
 /* Body Blog */
+
+.title{
+    padding-left: 12px;
+  }
+  
+  .row{
+    padding-left: 18px;
+  }
+  
+  .articulo{
+    font-weight: bold;
+    font-size: 20px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin-bottom: 40px;
+    padding-top: 40px;
+    color: inherit;
+  }
+  
+  .form-control{
+    resize: none;
+  }
+  
+  .user{
+    text-decoration:underline;
+    font-size: 25px;
+    margin-bottom: 20px;
+    padding-top: 30px;
+    color: inherit;
+  }
+  
+  .comment{
+    text-decoration:solid;
+    font-size: 15px;
+    margin-bottom: 100px;
+    color: inherit;
+  }
+
+  
 
 /* Body Contacto */
 
 /* Body Carta*/
 
+.carta{
+  text-align: center;
+}
+
 /* Body Menu */
 
-/* Body Plato */
+
+
+
+.bodyPlato{
+    padding: 50px;
+}
+
+.plato{
+    
+    padding: 20px 40px 40px;
+    max-width: 800px;
+}
+
+.plato_image{
+    border-radius: 20px 50px;
+    width: 450px;
+    margin: 30px 30px 30px 0;
+    float: left;
+    
+}
+
+.plato_text{
+    display: inline;
+}
+
+
 
 /* Body Reserva */
-
-/* Body Donde Estamos */
-
-
-
 
 .footer-basic {
     background-color:#ffffff;
@@ -112,6 +199,7 @@ button[type=submit]:hover{
     height: auto;
     bottom: 0;
     width: 100%;
+
 }
   
   .footer-basic ul {
@@ -124,9 +212,7 @@ button[type=submit]:hover{
   }
   
   
-  .footer-basic li {
-    padding:0 10px;
-  }
+  
   
   .footer-basic ul a {
     color:inherit;
@@ -134,9 +220,7 @@ button[type=submit]:hover{
     opacity:0.8;
   }
   
-  .footer-basic ul a:hover {
-    opacity:1;
-  }
+  
   
   .footer-basic .social {
     text-align:center;
@@ -157,9 +241,7 @@ button[type=submit]:hover{
     opacity:0.75;
   }
   
-  .footer-basic .social > a:hover {
-    opacity:0.9;
-  }
+  
   
   .footer-basic .copyright {
     margin-top:15px;
@@ -167,5 +249,9 @@ button[type=submit]:hover{
     font-size:13px;
     color:#aaa;
     margin-bottom:0;
+  }
+
+  .footer-basic a{
+    color:black
   }
   
