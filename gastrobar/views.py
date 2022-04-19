@@ -62,6 +62,8 @@ def dish(request, pk):
 	}
 	return render(request, 'plato.html', context)
 
+def homeGB(request):
+	return render(request, 'homeGB.html')
 
 def reservation(request):
 	form = ReservationForm()
