@@ -1,4 +1,18 @@
 from django.shortcuts import render
+from django.core.mail import send_mail
+
+from django_gastrobar.forms import ContactoForm
+
+
+def send_user_mail(name, mail, asunto, contenido):
+	
+		send_mail(
+		'Usuario: '+ name,
+		'Mail de usuario: ' + mail + "\n" + "Asunto: " + asunto + "\n" + "Contenido: " + contenido ,
+		'djangogastrobb@gmail.com',
+		['danelibiza@gmail.com'],
+		fail_silently=False,
+		)
 
 def home(request):
 	return render(request, 'home.html')
@@ -16,13 +30,12 @@ def contacto(request):
 		form = ContactoForm(request.POST)
 		if form.is_valid():
 			value = True
-			new = Contacto()
 
-			new.name = form.cleaned_data["name"]
-			new.mail = form.cleaned_data["mail"]
-			new.asunto = form.cleaned_data["asunto"]
-			new.mensaje = form.cleaned_data["mensaje"]
-
+			name = form.cleaned_data["name"]
+			mail = form.cleaned_data["mail"]
+			asunto = form.cleaned_data["asunto"]
+			mensaje = form.cleaned_data["mensaje"]
+			send_user_mail(name, mail, asunto, mensaje)
 
 			
 
@@ -33,3 +46,5 @@ def contacto(request):
     }
 
 	return render(request, 'contacto.html', context)
+
+	

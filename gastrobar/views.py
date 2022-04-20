@@ -1,7 +1,5 @@
 from django.shortcuts import render
-from django.http import HttpResponse
 from gastrobar.forms import ReservationForm
-from gastrobar.forms import ContactoForm
 from gastrobar.models import Reservation, Dish
 import random
 from datetime import datetime
