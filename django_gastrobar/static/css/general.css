@@ -20,6 +20,7 @@ font-style: italic;
 }
 
 .divForm{
+
 margin: 0 auto;
 padding-left: 2em;
 padding-right: 2em;
@@ -33,12 +34,18 @@ width: 25%;
 }
 
 button[type=submit]{
+margin-left: 50px;
 background-color: black;
 }
 
 button[type=submit]:hover{
 background-color: rgb(44, 44, 44);
 }
+
+.text{
+  width:25%
+}
+
 
 /* Home */
 .home_body{

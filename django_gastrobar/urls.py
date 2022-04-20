@@ -27,5 +27,6 @@ urlpatterns = [
     path('gastroempleo/', include('gastroempleo.urls')),
     path('legalAdvice/',views.legal, name='legal'),
     path('privacy/',views.privacy, name='privacy'),
-    path('contacto/',views.contacto, name='contacto'),
+    path('gastrobar/contacto/',views.contacto, name='contacto'),
+    path('gastroblog/contacto/',views.contacto, name='contacto'),
 ]
