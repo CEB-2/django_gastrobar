@@ -6,18 +6,29 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/general.css'%}">
+
     <title>Home</title>
 </head>
-<body>
-    <h1>Novedades</h1>
-    <p>Las personas menores de 13 años tienen un 50% de descuento.</p>
-    <p>Tenemos carne de Kobe de primera calidad.</p>
-    <p>Hay cócteles sin alcohol.</p>
-    <p>Hemos abierto un salón solo para reservas.</p>
-    <iframe width="100%" height="500" src="https://www.youtube.com/embed/v8W_SJPWUmI" 
-    title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-    allowfullscreen>
-    </iframe>
+<body class="bodyHomeGB">
+    <div>
+        <h1 class="titleHomeGB">Novedades</h1>
+    </div>
+    <div>
+        <p class="pHomeGB">Las personas menores de 13 años tienen un 50% de descuento.</p>
+        <p class="pHomeGB">Tenemos carne de Kobe de primera calidad.</p>
+        <p class="pHomeGB">Hay cócteles sin alcohol.</p>
+        <p class="pHomeGB">Hemos abierto un salón solo para reservas.</p>
+
+    </div>
+
+    <div class="videoClass">
+        <iframe class="video" width="100%" height="500" src="https://www.youtube.com/embed/v8W_SJPWUmI" 
+        title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+        allowfullscreen>
+        </iframe>
+
+    </div>
 </body>
 </html>
 {% endblock %}
