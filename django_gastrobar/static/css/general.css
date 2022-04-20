@@ -116,19 +116,33 @@ color:black;
 
 .title{
   padding-left: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
 }
 
 .row{
   padding-left: 18px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
 }
 
 .articulo{
   font-weight: bold;
   font-size: 20px;
-  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-family:Helvetica ,Helvetica,Arial,sans-serif; 
   margin-bottom: 40px;
   padding-top: 40px;
   color: inherit;
+  border: 10px solid white;
+  border-radius: 10px 10px;
+  padding: 50px;
+ 
+
 }
 
 .form-control{
