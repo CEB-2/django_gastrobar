@@ -2,22 +2,19 @@
 {%load static%}
 {% block page_content1 %}
 
-<h1>GatroEmpleo1112221</h1>
-
-
 <div class="bodyPlato">
     <div class="plato">
       <img
         class="plato_image"
-        src="{% static 'img/' %}{{offers.photo}}"
+        src="{% static 'img/' %}{{empleo.foto}}"
         alt="imagenOfertaEmpleo"
       />
       <div class="plato_text">
-        <h2 class="dishName">{{offers.puesto}} Puesto </h2>
+        <h2 class="dishName">{{empleo.puesto}}</h2>
   
-        <h3 class="dishPrice">{{offers.description}}  email del q la ofrece</h3>
-  
-        <p class="dishDescription">{{offers.mail}}Description oferta</p>
+        <h3 class="dishPrice">{{empleo.mail}}</h3>
+        <br>
+        <p class="dishDescription">{{empleo.description}}</p>
       </div>
     </div>
   </div>
