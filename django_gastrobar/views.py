@@ -10,7 +10,7 @@ def send_user_mail(name, mail, asunto, contenido):
 		'Usuario: '+ name,
 		'Mail de usuario: ' + mail + "\n" + "Asunto: " + asunto + "\n" + "Contenido: " + contenido ,
 		'djangogastrobb@gmail.com',
-		['danelibiza@gmail.com'],
+		['djangogastrobb@gmail.com'],
 		fail_silently=False,
 		)
 
