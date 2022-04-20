@@ -2,19 +2,13 @@
 {%load static%}
 {% block page_content1 %}
 
-<div class="bodyPlato">
-    <div class="plato">
-      <img
-        class="plato_image"
-        src="{% static 'img/' %}{{empleo.foto}}"
-        alt="imagenOfertaEmpleo"
-      />
-      <div class="plato_text">
-        <h2 class="dishName">{{empleo.puesto}}</h2>
-  
-        <h3 class="dishPrice">{{empleo.mail}}</h3>
-        <br>
-        <p class="dishDescription">{{empleo.description}}</p>
+<div class="body_offer">
+    <div class="offer">
+      <div class="offer_div">
+        <img class="offer_image" src="{% static 'img/' %}{{empleo.foto}}"alt="imagenOfertaEmpleo"/>
+        <h2 class="offer_position">{{empleo.puesto}}</h2>
+        <p class="offer_description">{{empleo.description}}</p>
+        <h3 class="offer_mail">{{empleo.mail}}</h3>
       </div>
     </div>
   </div>

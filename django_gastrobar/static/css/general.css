@@ -285,3 +285,31 @@ footer{
   border-radius: 20px;
 }
 
+
+/* Offer */
+.body_offer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.offer_div{
+  width: 50vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid black;
+}
+
+.offer_image{
+  width: 50%;
+  height: 40%;
+  border-radius: 20px;
+  border: 1px solid black;
+}
+
+.offer_mail{
+  text-align: right;
+  margin-left: auto;
+}
