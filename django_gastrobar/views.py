@@ -3,6 +3,7 @@ from django.core.mail import send_mail
 
 from django_gastrobar.forms import ContactoForm
 
+from django.views.generic import TemplateView
 
 def send_user_mail(name, mail, asunto, contenido):
 	
@@ -26,11 +27,16 @@ def privacy(request):
 def contacto(request):
 	form = ContactoForm()
 	value = False
+
+	if "gastroblog" in request.path:
+		base_template = "mainBlog.html"
+	else:
+		base_template = "main.html"
+
 	if request.method == "POST":
 		form = ContactoForm(request.POST)
 		if form.is_valid():
 			value = True
-
 			name = form.cleaned_data["name"]
 			mail = form.cleaned_data["mail"]
 			asunto = form.cleaned_data["asunto"]
@@ -40,9 +46,9 @@ def contacto(request):
 		'contacto' : contacto,
         'form' : form,
 		'value' : value,
-		
+		'base_template' : base_template,
+
     }
 
 	return render(request, 'contacto.html', context)
 
-	
