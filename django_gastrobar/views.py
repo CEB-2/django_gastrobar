@@ -36,13 +36,11 @@ def contacto(request):
 			asunto = form.cleaned_data["asunto"]
 			mensaje = form.cleaned_data["mensaje"]
 			send_user_mail(name, mail, asunto, mensaje)
-
-			
-
 	context = {
 		'contacto' : contacto,
         'form' : form,
 		'value' : value,
+		
     }
 
 	return render(request, 'contacto.html', context)
