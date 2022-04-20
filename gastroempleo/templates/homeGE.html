@@ -4,23 +4,23 @@
 {%block page_content1 %}
 </header>
 
-<h1>Ofertas de empleo</h1>
-<div class="row">
-{% for empleo in empleos %}
-    <div class="col-md-4">
-        <div class="card mb-2">
-            <img  class="card-img-top" src="{% static 'img/'%}{{empleo.foto}}">
-            
-            <div class="card-body">
+<div class="cartadiv">
+    <div class="cartadivdos">
+    <h1>Ofertas de empleo</h1>
+
+        {% for empleo in empleos %}
+        <div class="col4">
+            <div class="col2">
                 <h2  class="card-title">{{empleo.puesto}}</h2>
-                <a class="btn btn-primary" href="{% url 'offer' empleo.pk%}">Ver oferta</a>
-            </div>
+                <img class="imghome" src="{% static 'img/'%}{{empleo.foto}}" width="500" height="400">
+                <div class="card-body">
+                    <a class="btn btn-primary" href="{% url 'offer' empleo.pk%}">Ver oferta</a>
+                </div>
+           </div>
         </div>
+        {%endfor%}
     </div>
-{%endfor%}
 </div>
 
-    
 
 {%endblock%}
-
