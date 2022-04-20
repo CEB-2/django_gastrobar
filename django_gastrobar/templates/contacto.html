@@ -1,0 +1,35 @@
+{% extends 'main.html'%}
+{% load static %}
+
+{%block page_content2 %}
+
+<div class="divContacto" >
+    <h1>Contacto</h1>
+
+    <div>
+
+        <form action="/gastrobar/contacto" method="post">
+        {% csrf_token %}
+
+            <div class="form-group" >
+                {{form.name}}
+            </div>
+
+            <div class="form-group" >
+                {{form.mail}}
+            </div>
+
+            <button type="submit" class="btn btn-primary">Enviar</button>
+            {% if value%}
+                <p> Su mensaje se ha enviado con éxito, revise su bandeja de entrada</p>
+            {% endif%}
+
+        </form>
+    </div>
+</div>
+
+
+
+    
+
+{%endblock%}

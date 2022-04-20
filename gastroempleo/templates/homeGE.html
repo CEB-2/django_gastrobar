@@ -9,7 +9,7 @@
 {% for empleo in empleos %}
     <div class="col-md-4">
         <div class="card mb-2">
-            <img  class="card-img-top" src="{% static 'img/'%}{{empleo.foto}}.jpg">
+            <img  class="card-img-top" src="{% static 'img/'%}{{empleo.foto}}">
             
             <div class="card-body">
                 <h2  class="card-title">{{empleo.puesto}}</h2>
