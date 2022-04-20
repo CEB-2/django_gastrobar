@@ -1,58 +1,49 @@
-
-
- {% extends 'main.html' %}  {% load static %}
+{% extends 'main.html' %}  {% load static %}
  {% block page_content2 %}
-  <link rel="stylesheet" href="{% static 'css/general.css' %}">
   <link href='https://fonts.googleapis.com/css?family=Cookie' rel='stylesheet' type='text/css'>
   <link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:700' rel='stylesheet' type='text/css'>
   <link href='https://fonts.googleapis.com/css?family=Sancreek' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="{% static 'css/general.css' %}">
 
   <body>
-
-    <div class="carta">
-
-      <h1>Carta</h1>
-
-          <h2>Primer plato</h2>
-          {% for dish in cartaFirst %}
-              
-          <div class="card-body">
-            <h3 class="card-title">
-              <b><a href = "{% url 'dish' dish.pk %}"> {{dish.name}} </a></b>
-              <span class="w3-right w3-tag w3-dark-grey w3-round">{{dish.price}}€</span>
-            </h3>
-          </div>
-          {% endfor %}
-
-          <br>
-
-          <h2>Segundo plato</h2>
-          {% for dish in cartaSecond %}
-              
-          <div class="card-body">
-            <h3 class="card-title">
-              <b><a href = "{% url 'dish' dish.pk %}"> {{dish.name}} </a></b>
-              <span class="w3-right w3-tag w3-dark-grey w3-round">{{dish.price}}€</span>
-            </h3>
-          </div>
-          {% endfor %}
+      <div class="cartadiv">
+        <div class="cartadivdos">
+          <h1>CARTA</h1>
           
-              
-          <br>
-
-          <h2>Postre</h2>
-          {% for dish in cartaThird %}
-              
-          <div class="card-body">
-            <h3 class="card-title">
-              <b><a href = "{% url 'dish' dish.pk %}"> {{dish.name}} </a></b>
-              <span class="w3-right w3-tag w3-dark-grey w3-round">{{dish.price}}€</span>
-            </h3>
+          <h2>PRIMER PLATO</h2>
+          <div id="primero">
+            {% for dish in cartaFirst %}
+              <h2 class="card-title">
+                <b><a href = "{% url 'dish' dish.pk %}"> {{dish.name}} </a></b>
+                <span class="w3-right w3-tag w3-dark-grey w3-round">{{dish.price}}</span>
+              </h2>
+            {% endfor %}
           </div>
-          {% endfor %}
+          
 
-      
+          <br>
+            <h2>SEGUNDO PALTO</h2>      
+            <div class="segundo">
+            {% for dish in cartaSecond %}
+              <h2 class="card-title">
+                <b><a href = "{% url 'dish' dish.pk %}"> {{dish.name}} </a></b>
+                <span class="w3-right w3-tag w3-dark-grey w3-round"
+                  >{{dish.price}}</span>
+              </h2>
+              {% endfor %}
+          </div>
+            
+          <br>
+          <h2>POSTRE</h2>
+          <div class="postre">
+          {% for dish in cartaThird %}
+              <h2 class="card-title">
+                <b><a href = "{% url 'dish' dish.pk %}"> {{dish.name}} </a></b>
+                <span class="w3-right w3-tag w3-dark-grey w3-round"
+                  >{{dish.price}}</span>
+              </h2>
+            {% endfor %}
+          </div>
+        </div>
     </div>
     {% endblock %}
-
- 
