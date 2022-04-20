@@ -286,6 +286,20 @@ footer{
 }
 
 
+/* DONDE ESTAMOS*/
+.page-title{
+  text-align:center;
+}
+
+.div-map{
+  text-align:center;
+}
+
+.map{
+  border-radius: 20px;
+  width:50%
+}
+
 /* Offer */
 .body_offer{
   display: flex;
