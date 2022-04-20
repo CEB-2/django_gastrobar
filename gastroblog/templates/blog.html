@@ -14,7 +14,7 @@
             <div class="articulo" >
                 {{article.content}}
                 
-            </div>
+            
 
             <form action="/gastroblog/" method="post">
             {% csrf_token %}
@@ -49,6 +49,7 @@
                 
                 {% endfor %}
             </div>
+        </div>
         </body>
         {% endfor %}
 
