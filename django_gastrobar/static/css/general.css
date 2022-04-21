@@ -13,6 +13,7 @@ body{
 h1{
 font-weight: bold;
 }
+
 a{
 color: rgb(0, 0, 0);
 text-decoration: underline;
@@ -20,18 +21,21 @@ font-style: italic;
 }
 
 .divForm{
-
 margin: 0 auto;
 padding-left: 2em;
 padding-right: 2em;
-margin-left: 40%;
+position: relative;
+
 
 }
 
-.divForm input{
-width: 25%;
+.divForm input, .divForm textarea, .divForm h1{
+  width: 40%;
+  margin: 0 auto;
 
 }
+
+
 
 button[type=submit]{
 margin-left: 50px;
@@ -42,9 +46,6 @@ button[type=submit]:hover{
 background-color: rgb(44, 44, 44);
 }
 
-.text textarea{
-  width:25%
-}
 
 
 /* Home */
@@ -88,7 +89,6 @@ background-color: rgb(44, 44, 44);
 
 }
 
-
 .apps{
   color: rgb(255, 255, 255);
   text-decoration: none;
@@ -111,15 +111,6 @@ text-decoration: bold;
 .our_menu, .our_menu h1 {
 color:black;
 }
-
-
-
-
-
-
-
-
-
 /* Body Blog */
 
 .title{
@@ -171,9 +162,6 @@ color:black;
   margin-bottom: 100px;
   color: inherit;
 }
-
-
-
 /* Body Contacto */
 
 /* Body Carta & ofertas*/
@@ -197,9 +185,6 @@ color:black;
   text-align: center;
   
 }
-
-
-
 /* Body Menu */
 
 .precio{
