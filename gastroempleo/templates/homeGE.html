@@ -16,6 +16,8 @@
             <div class="col2">
                 <h2  class="card-title">{{empleo.puesto}}</h2>
                 <img class="imghome" src="{% static 'img/'%}{{empleo.foto}}" width="500" height="400">
+                <br>
+                <br>
                 <div class="card-body">
                     <a class="btn btn-primary" href="{% url 'offer' empleo.pk%}">Ver oferta</a>
                 </div>
