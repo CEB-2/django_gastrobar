@@ -5,7 +5,7 @@ html {
 }
 
 body{
-  background-color: #f0bc38;
+  background-color: #ffbd27;
   margin-bottom: 185px;
 
 }
@@ -51,7 +51,7 @@ background-color: rgb(44, 44, 44);
 .home_body{
   background-image: url('/static/img/django.jpg');
   background-repeat: no-repeat;
-  background-size: cover;
+  background-position: center;
   display: flex;
   justify-content: center;
 }
@@ -388,5 +388,15 @@ footer{
   .map{
     width:95%;
   }
+  .container{
+    flex-direction: column;
+  }
+  
+  .blog-div, .bar-div, .empleo-div{
+    width: 60vw;
+    height: 10vh;
+    margin: 5em;
+  }
+  
 
 }
