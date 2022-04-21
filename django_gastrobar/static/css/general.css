@@ -1,3 +1,4 @@
+ 
 /* Global */
 html {
   min-height: 100%;
@@ -158,7 +159,7 @@ color:black;
 .articulo{
   font-weight: bold;
   font-size: 20px;
-  font-family:Helvetica ,Helvetica,Arial,sans-serif; 
+  font-family:Helvetica ,Helvetica,Arial,sans-serif;
   margin-bottom: 40px;
   padding-top: 40px;
   color: inherit;
@@ -213,7 +214,7 @@ color:black;
   padding: 4rem;
   border-radius: 1%;
   text-align: center;
-  
+
 }
 
 .imghome{
@@ -235,7 +236,7 @@ color:black;
 }
 
 .plato{
-  
+
   padding: 20px 40px 40px;
   max-width: 800px;
 }
@@ -245,7 +246,7 @@ color:black;
   width: 450px;
   margin: 30px 30px 30px 0;
   float: left;
-  
+
 }
 
 .plato_text{
@@ -261,7 +262,7 @@ color:black;
 footer{
   background-color:#ffffff;
   color:#4b4c4d;
-  
+
   width: 100%;
   position: absolute;
   bottom: 0;
@@ -370,7 +371,7 @@ footer{
   display: flex;
   justify-content: center;
   align-items: center;
-  
+
 }
 
 .offer_div{
@@ -420,12 +421,11 @@ footer{
   .container{
     flex-direction: column;
   }
-  
+
   .blog-div, .bar-div, .empleo-div{
     width: 60vw;
     height: 10vh;
-    margin: 4em;
+    margin: 5em;
   }
-  
 
 }
