@@ -36,8 +36,8 @@
 
 
             <p>Comentarios</p>
+            {% for comment in comments %}
             <div class="comments">
-                {% for comment in comments %}
                 
                     {% if comment.article_id == article.pk %}
                     
@@ -51,8 +51,8 @@
 
                     {% endif %}
                 
-                {% endfor %}
             </div>
+                {% endfor %}
         </div>
         </body>
         {% endfor %}
