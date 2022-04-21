@@ -30,10 +30,17 @@ position: relative;
 
 }
 
-.divForm input, .divForm textarea, .divForm h1{
+.divForm input, .divForm h1,.divForm textarea{
   width: 40%;
   margin: 0 auto;
 
+}
+
+
+
+form button{
+  margin-left: 555px;
+  margin-top: 5px;
 }
 
 
@@ -62,10 +69,6 @@ background-color: rgb(44, 44, 44);
   align-items: center;
 }
 
-
-.text{
-  width:25%
-}
 
 
 /* Home */
@@ -394,10 +397,7 @@ footer{
   text-align: right;
   margin-left: auto;
 }
-.divForm button{
-  margin-top: 5px;
-  margin-left: 0;
-}
+
 
 .legalPrivacy{
   margin-left: 15px;
