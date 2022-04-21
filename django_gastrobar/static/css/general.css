@@ -5,7 +5,7 @@ html {
 }
 
 body{
-  background-color: #ffbd27;
+  background-color: #f0bc38;
   margin-bottom: 185px;
 
 }
@@ -24,20 +24,16 @@ font-style: italic;
 margin: 0 auto;
 padding-left: 2em;
 padding-right: 2em;
-position: relative;
-
-
-}
-
-.divForm input, .divForm textarea, .divForm h1{
-  width: 40%;
-  margin: 0 auto;
+margin-left: 40%;
 
 }
 
+.divForm input{
+width: 25%;
 
+}
 
-button[type=submit]{
+.button[type=submit]{
 background-color: black;
 }
 
@@ -45,13 +41,16 @@ button[type=submit]:hover{
 background-color: rgb(44, 44, 44);
 }
 
+.text textarea{
+  width:25%
+}
 
 
 /* Home */
 .home_body{
   background-image: url('/static/img/django.jpg');
   background-repeat: no-repeat;
-  background-position: center;
+  background-size: cover;
   display: flex;
   justify-content: center;
 }
@@ -172,6 +171,9 @@ color:black;
   font-size: 15px;
   color: inherit;
 }
+
+
+
 /* Body Contacto */
 
 /* Body Carta & ofertas*/
@@ -374,6 +376,87 @@ footer{
   margin-right: 15px;
 }
 
+/* Menu Responsive */
+
+nav ul{
+  float: right;
+  margin-right: 20px;
+}
+nav ul li{
+  display: inline-block;
+  line-height: 80px;
+  margin: 0 5px;
+}
+nav ul li a{
+  color: #fff;
+  font-size: 18px;
+  padding: 7px 13px;
+  border-radius: 3px;
+  text-transform: uppercase;
+}
+li a.active, li a:hover{
+  background: #efbb38;
+  transition: .5s;
+}
+.checkbtn{
+  font-size: 30px;
+  color: rgb(0, 0, 0);
+  float: right;
+  line-height: 80px;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
+}
+#check{
+  display: none;
+}
+section{
+  background: url(fondo.jpg) no-repeat;
+  background-size: cover;
+  background-position: center center;
+  height: calc(100vh - 80px);
+}
+
+@media (max-width: 952px){
+  .enlace{
+      padding-left: 20px;
+  }
+  nav ul li a{
+      font-size: 16px;
+  }
+}
+
+@media (max-width: 858px){
+  .checkbtn{
+      display: block;
+  }
+  ul{
+      position: fixed;
+      width: 100%;
+      height: 100vh;
+      background: rgb(44, 44, 44);
+      top: 80px;
+      left: -100%;
+      text-align: center;
+      transition: all .5s;
+  }
+  nav ul li{
+      display: block;
+      margin: 50px 0;
+      line-height: 30px;
+  }
+  nav ul li a{
+      font-size: 20px;
+  }
+  li a:hover, li a.active{
+      background: none;
+      color: red;
+  }
+  #check:checked ~ ul{
+      left:0;
+  }
+}
+
 
 @media screen and (max-width: 767px) {
   .divForm input, .text textarea{
@@ -388,15 +471,5 @@ footer{
   .map{
     width:95%;
   }
-  .container{
-    flex-direction: column;
-  }
   
-  .blog-div, .bar-div, .empleo-div{
-    width: 60vw;
-    height: 10vh;
-    margin: 5em;
-  }
-  
-
 }
