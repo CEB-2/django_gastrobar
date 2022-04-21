@@ -1,22 +1,21 @@
-{% extends 'base.html' %}
-{%load static%}
-{% block page_content1 %}
+{% extends 'base.html' %} {%load static%} {% block page_content1 %}
 
 <div class="body_offer">
-    <div class="offer">
-      <div class="offer_div">
-        <a class="btn btn-primary" href="/gastroempleo/">Volver a las ofertas</a>
-        <img class="offer_image" src="{% static 'img/' %}{{empleo.foto}}"alt="imagenOfertaEmpleo"/>
-        <h2 class="offer_position">{{empleo.puesto}}</h2>
-        <p class="offer_description">{{empleo.description}}</p>
-        <h3 class="offer_mail">{{empleo.mail}}</h3>
-      </div>
+  <div class="offer">
+    <div class="offer_div">
+      <img
+        class="offer_image"
+        src="{% static 'img/' %}{{empleo.foto}}"
+        alt="imagenOfertaEmpleo"
+      />
+      <h2 class="offer_position">{{empleo.puesto}}</h2>
+      <p class="offer_description">{{empleo.description}}</p>
+      <h3 class="offer_mail">{{empleo.mail}}</h3>
     </div>
   </div>
+</div>
+<div class="btnvolver">
+  <a class="btn btn-primary" href="/gastroempleo/">Volver a las ofertas</a>
+</div>
 
-
-
-
-{% block page_content2 %}
-{% endblock %}
-{% endblock %}
+{% block page_content2 %} {% endblock %} {% endblock %}
