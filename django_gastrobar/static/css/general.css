@@ -34,7 +34,6 @@ width: 25%;
 }
 
 button[type=submit]{
-margin-left: 50px;
 background-color: black;
 }
 
@@ -148,26 +147,31 @@ color:black;
   border: 10px solid white;
   border-radius: 10px 10px;
   padding: 50px;
- 
+}
 
+.buttonblog{
+  margin-bottom: 3em;
+  font-size: 0.8em;
 }
 
 .form-control{
   resize: none;
 }
 
+.comments{
+  background-color: rgba(255, 255, 255, 0.301);
+  border-radius: 0.4em;
+  padding: 1em;
+}
+
 .user{
-  text-decoration:underline;
-  font-size: 25px;
-  margin-bottom: 20px;
-  padding-top: 30px;
+  margin-bottom: 0.5em;
   color: inherit;
 }
 
 .comment{
   text-decoration:solid;
   font-size: 15px;
-  margin-bottom: 100px;
   color: inherit;
 }
 
