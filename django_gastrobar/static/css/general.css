@@ -42,7 +42,7 @@ button[type=submit]:hover{
 background-color: rgb(44, 44, 44);
 }
 
-.text{
+.text textarea{
   width:25%
 }
 
@@ -365,4 +365,22 @@ footer{
 .offer_mail{
   text-align: right;
   margin-left: auto;
+}
+.divForm button{
+  margin-top: 5px;
+  margin-left: 0;
+}
+
+@media screen and (max-width: 767px) {
+  .divForm input, .text textarea{
+    width: 95%;
+    margin:0;
+    padding-right: 0;
+  }
+  .divForm{
+    margin-left: 0;
+  }
+
+  
+
 }
