@@ -95,11 +95,16 @@ background-color: rgb(44, 44, 44);
 }
 
 .subrayado{
-  text-decoration: underline #f0bc38 2px;        /* Subrayado rojo */
+  text-decoration: underline #f0bc38 2px; 
+  font-size: 30px;       /* Subrayado rojo */
 }
 
 .subrayado :hover{
   color: #f0bc38;
+}
+
+.titulo{
+  font-size: 30px;
 }
 
 .our_menu, .our_menu h2, .our_menu a{
