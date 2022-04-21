@@ -11,13 +11,15 @@
         
         {% for article in articles %}
 
-            <div class="articulo" >
-                {{article.content}}
-                
-            
+        <br>
+        <div class="articulo" >
+            <h3>{{article.content}}</h3>          
 
             <form action="/gastroblog/" method="post">
             {% csrf_token %}
+            <br>
+
+            <p>Escribe un comentario</p>
 
                 <div class="form-group" >
                     {{form.user}}
@@ -28,11 +30,13 @@
                 </div>
                 <input name = "article_id" type = "hidden" value = {{article.pk}}>
 
-                <button type="submit" class="btn btn-primary" >Enviar</button>
+                <button type="submit" class="btn btn-primary buttonblog" >Enviar</button>
 
             </form>
 
-            <div>
+
+            <p>Comentarios</p>
+            <div class="comments">
                 {% for comment in comments %}
                 
                     {% if comment.article_id == article.pk %}
