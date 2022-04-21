@@ -1,8 +1,10 @@
 {% extends 'base.html' %}
 {%load static%}
-
+{% block title %}
+<title> GastroBar </title>
+{% endblock %}
 {% block page_content1 %}
-<title>GastroBar</title>
+
             <nav class="navbar navbar-default">
                   <ul class="nav navbar-nav" class="nav">
                     <li><a href="/gastrobar/homeGB">Home</a></li>
@@ -14,6 +16,7 @@
                   </ul>
               </nav>
         </header>
+        
 
 {% block page_content2 %}
 
