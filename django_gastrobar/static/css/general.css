@@ -15,8 +15,8 @@ font-weight: bold;
 }
 a{
 color: rgb(0, 0, 0);
-text-decoration: underline;
 font-style: italic;
+
 }
 
 .divForm{
@@ -94,11 +94,12 @@ background-color: rgb(44, 44, 44);
 }
 
 .subrayado{
-  text-decoration: underline #f0bc38 2px; 
+  text-decoration: underline #efbb38 2px;
   font-size: 30px;       /* Subrayado rojo */
 }
 
 .subrayado :hover{
+
   color: #f0bc38;
 }
 
