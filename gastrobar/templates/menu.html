@@ -11,17 +11,17 @@
 		
 		<h3>Ofertas de hoy</h3>
 		<br>
-		<h4>De Primero </h4>
+		<h4>Primero </h4>
 		{%for x in dish_first%}
 			<b class="subrayado"><a href = "{% url 'dish' x.pk %}"> {{x.name}} </a></b>
 		{%endfor%}
 		<br>
-		<h4>De Segundo </h4>  
+		<h4>Segundo </h4>  
 		{%for y in dish_second%}
 		<b class="subrayado"><a href = "{% url 'dish' y.pk %}"> {{y.name}} </a></b>
 		{%endfor%}
 		<br>
-		<h4>De Postre </h4>
+		<h4>Postre </h4>
 		{%for z in dish_dessert%}
 		<b class="subrayado"><a href = "{% url 'dish' z.pk %}"> {{z.name}} </a></b>
 		{%endfor%}
