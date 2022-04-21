@@ -29,12 +29,16 @@ position: relative;
 
 }
 
-.divForm input, .divForm textarea, .divForm h1{
+.divForm input, .divForm textarea, .divForm h1 {
   width: 40%;
   margin: 0 auto;
-
 }
 
+
+form button{
+  margin-left: 555px;
+  margin-top: 5px;
+}
 
 
 button[type=submit]{
@@ -364,10 +368,7 @@ footer{
   text-align: right;
   margin-left: auto;
 }
-.divForm button{
-  margin-top: 5px;
-  margin-left: 0;
-}
+
 
 .legalPrivacy{
   margin-left: 15px;
