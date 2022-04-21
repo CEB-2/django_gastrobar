@@ -202,7 +202,9 @@ color:black;
 
 /* Body Menu */
 
-
+.precio{
+  font-size: 30px;
+}
 
 
 .bodyPlato{
