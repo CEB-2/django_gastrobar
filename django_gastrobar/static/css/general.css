@@ -5,7 +5,7 @@ html {
 }
 
 body{
-  background-color: #f0bc38;
+  background-color: #ffbd27;
   margin-bottom: 185px;
 
 }
@@ -13,28 +13,31 @@ body{
 h1{
 font-weight: bold;
 }
+
 a{
 color: rgb(0, 0, 0);
-text-decoration: none;
 font-style: italic;
+
 }
 
 .divForm{
-
 margin: 0 auto;
 padding-left: 2em;
 padding-right: 2em;
-margin-left: 40%;
+position: relative;
+
 
 }
 
-.divForm input{
-width: 25%;
+.divForm input, .divForm textarea, .divForm h1{
+  width: 40%;
+  margin: 0 auto;
 
 }
+
+
 
 button[type=submit]{
-margin-left: 50px;
 background-color: black;
 }
 
@@ -68,7 +71,7 @@ background-color: rgb(44, 44, 44);
 .home_body{
   background-image: url('/static/img/django.jpg');
   background-repeat: no-repeat;
-  background-size: cover;
+  background-position: center;
   display: flex;
   justify-content: center;
 }
@@ -105,17 +108,23 @@ background-color: rgb(44, 44, 44);
 
 }
 
-
 .apps{
   color: rgb(255, 255, 255);
   text-decoration: none;
 }
 
-.our_menu{
-text-align: center;
-padding-right: 1%;
-font-size: 1.2em;
-color:black;
+.subrayado{
+  text-decoration: underline #efbb38 2px;
+  font-size: 30px;       /* Subrayado rojo */
+}
+
+.subrayado :hover{
+
+  color: #f0bc38;
+}
+
+.titulo{
+  font-size: 30px;
 }
 
 .our_menu, .our_menu h2, .our_menu a{
@@ -127,15 +136,6 @@ text-decoration: bold;
 .our_menu, .our_menu h1 {
 color:black;
 }
-
-
-
-
-
-
-
-
-
 /* Body Blog */
 
 .title{
@@ -165,31 +165,33 @@ color:black;
   border: 10px solid white;
   border-radius: 10px 10px;
   padding: 50px;
- 
+}
 
+.buttonblog{
+  margin-bottom: 3em;
+  font-size: 0.8em;
 }
 
 .form-control{
   resize: none;
 }
 
+.comments{
+  background-color: rgba(255, 255, 255, 0.301);
+  border-radius: 0.4em;
+  padding: 1em;
+}
+
 .user{
-  text-decoration:underline;
-  font-size: 25px;
-  margin-bottom: 20px;
-  padding-top: 30px;
+  margin-bottom: 0.5em;
   color: inherit;
 }
 
 .comment{
   text-decoration:solid;
   font-size: 15px;
-  margin-bottom: 100px;
   color: inherit;
 }
-
-
-
 /* Body Contacto */
 
 /* Body Carta & ofertas/GastroEmpleo*/
@@ -223,7 +225,9 @@ color:black;
 
 /* Body Menu */
 
-
+.precio{
+  font-size: 30px;
+}
 
 
 .bodyPlato{
@@ -388,4 +392,40 @@ footer{
 .offer_mail{
   text-align: right;
   margin-left: auto;
+}
+.divForm button{
+  margin-top: 5px;
+  margin-left: 0;
+}
+
+.legalPrivacy{
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+
+@media screen and (max-width: 767px) {
+  .divForm input, .text textarea{
+    width: 95%;
+    margin:0;
+    padding-right: 0;
+  }
+  .divForm{
+    margin-left: 0;
+  }
+
+  .map{
+    width:95%;
+  }
+  .container{
+    flex-direction: column;
+  }
+  
+  .blog-div, .bar-div, .empleo-div{
+    width: 60vw;
+    height: 10vh;
+    margin: 5em;
+  }
+  
+
 }

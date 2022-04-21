@@ -14,22 +14,20 @@
           <div id="primero">
             {% for dish in cartaFirst %}
               <h2 class="card-title">
-                <b><a href = "{% url 'dish' dish.pk %}"> {{dish.name}} </a></b>
-                <span class="w3-right w3-tag w3-dark-grey w3-round">{{dish.price}}</span>
-              </h2>
+                <b class="subrayado"><a href = "{% url 'dish' dish.pk %}" > {{dish.name}}</h2></a></b>
+                <p class="precio">  {{dish.price }} € </p>
             {% endfor %}
           </div>
           
 
           <br>
-            <h2>SEGUNDO PALTO</h2>      
+            <h2>SEGUNDO PLATO</h2>      
             <div class="segundo">
             {% for dish in cartaSecond %}
               <h2 class="card-title">
-                <b><a href = "{% url 'dish' dish.pk %}"> {{dish.name}} </a></b>
-                <span class="w3-right w3-tag w3-dark-grey w3-round"
-                  >{{dish.price}}</span>
-              </h2>
+                <b class="subrayado"><a href = "{% url 'dish' dish.pk %}"> {{dish.name}}</h2></a></b>
+                <p class="precio"> {{dish.price}} € </p>
+              
               {% endfor %}
           </div>
             
@@ -38,10 +36,9 @@
           <div class="postre">
           {% for dish in cartaThird %}
               <h2 class="card-title">
-                <b><a href = "{% url 'dish' dish.pk %}"> {{dish.name}} </a></b>
-                <span class="w3-right w3-tag w3-dark-grey w3-round"
-                  >{{dish.price}}</span>
-              </h2>
+                <b class="subrayado"><a href = "{% url 'dish' dish.pk %}"> {{dish.name}}</h2></a></b>
+                <p class="precio"> {{dish.price}} € </p>
+              
             {% endfor %}
           </div>
         </div>

@@ -2,38 +2,36 @@
 {% load static %}
 {% block page_content2 %}
 
-	<body>
+<body>
+
+<div class="cartadiv">
+	<div class="cartadivdos">
+		<h1 id="title">GastroBar</h1>
+		<h2>MENU DEL DÍA</h2> 
 		
-			
-		
+		<h3>Ofertas de hoy</h3>
+		<br>
+		<h4 class="titulo">Primero </h4>
+		{%for x in dish_first%}
+			<b class="subrayado"><a href = "{% url 'dish' x.pk %}"> {{x.name}} </a></b>
+		{%endfor%}
+		<br>
+		<h4 class="titulo">Segundo </h4>  
+		{%for y in dish_second%}
+		<b class="subrayado"><a href = "{% url 'dish' y.pk %}"> {{y.name}} </a></b>
+		{%endfor%}
+		<br>
+		<h4 class="titulo">Postre </h4>
+		{%for z in dish_dessert%}
+		<b class="subrayado"><a href = "{% url 'dish' z.pk %}"> {{z.name}} </a></b>
+		{%endfor%}
+		<br>
 
+		<h3>Por solo: {{format_dish_price}} €</h3>
 
-  <div class="our_menu" >
-	<h1 id="title">GastroBar</h1>
-	  <h2>MENU DEL DÍA</h2> 
-	  
-	  <h3>Ofertas de hoy</h3>
-	  <br>
-	<h4>De Primero </h4>
-	{%for x in dish_first%}
-		<b><a href = "{% url 'dish' x.pk %}"> {{x.name}} </a></b>
-	  {%endfor%}
-	  <br>
-	<h4>De Segundo </h4>  
-	{%for y in dish_second%}
-	<b><a href = "{% url 'dish' y.pk %}"> {{y.name}} </a></b>
-	  {%endfor%}
-	  <br>
-	<h4>De Postre </h4>
-	{%for z in dish_dessert%}
-	<b><a href = "{% url 'dish' z.pk %}"> {{z.name}} </a></b>
-	{%endfor%}
-	<br>
+  	</div>
+</div>
 
-	<h3>Por solo: {{format_dish_price}} €</h3>
-
-  </div>
-  
 
 {% endblock %}
  
