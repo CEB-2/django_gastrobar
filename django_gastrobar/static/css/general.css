@@ -94,11 +94,12 @@ background-color: rgb(44, 44, 44);
   text-decoration: none;
 }
 
-.our_menu{
-text-align: center;
-padding-right: 1%;
-font-size: 1.2em;
-color:black;
+.subrayado{
+  text-decoration: underline #f0bc38 2px;        /* Subrayado rojo */
+}
+
+.subrayado :hover{
+  color: #f0bc38;
 }
 
 .our_menu, .our_menu h2, .our_menu a{
